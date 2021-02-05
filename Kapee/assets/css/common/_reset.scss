@@ -1,0 +1,16 @@
+body{
+    // font-family: "Arial, Helvetica, sans-serif";
+    font-family: $main_font_family !important;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.6;
+    text-align: left;
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
