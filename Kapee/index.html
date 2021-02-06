@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapee</title>
+    <script src="https://kit.fontawesome.com/1f2890de0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/Kapee/assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <!-- Header top start-->
+        <section id="header-top">
+            <div class="container">
+                <div class="row header-row">
+                    <div class="header-col-left col-lg-6 col-md-6">
+                        <div class="language">
+                            <ul class="language-items">
+                                <li class="language-item">
+                                    <a class="language-text" href="#">English</a>
+                                    <i class="fas fa-angle-down"></i>
+                                    <ul class="sublanguge-items">
+                                        <li class="sublanguage-item">
+                                            <a class="sublanguage-text" href="#">Franch</a>
+                                        </li>
+                                        <li class="sublanguage-item">
+                                            <a href="#">Deutsch</a>
+                                        </li>
+                                        <li class="sublanguage-item">
+                                            <a href="#">Arabic</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="currency">
+                            <ul class="currency-items">
+                                <li class="currency-item">
+                                    <a class="currency-text" href="#">$ Dollar (US)</a>
+                                    <i class="fas fa-angle-down"></i>
+                                    <ul class="subcurrency-items">
+                                        <li class="subcurrency-item">
+                                            <a class="subcurrency-text" href="#">₹ RUPEE (INR)</a>
+                                        </li>
+                                        <li class="subcurrency-item">
+                                            <a href="#">£ Pound (UK)</a>
+                                        </li>
+                                        <li class="subcurrency-item">
+                                            <a href="#">€ Euro (EUR)</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-col-right col-lg-6 col-md-6">
+                        <div class="welcome">
+                            <span>Welcome to Our Store!</span>
+                        </div>
+                        <div class="page-navbar">
+                            <ul class="menu-items">
+                                <li class="menu-item">
+                                    <a href="#">
+                                        <i class="far fa-folder-open"></i>
+                                        <span>Blog</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        <i class="far fa-clone"></i>
+                                        <span>FAQ</span>
+                                    </a>
+                                </li>
+                                <li class="menu-item menu-item-last">
+                                    <a href="#">
+                                        <i class="far fa-envelope"></i>
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Header search start -->
+        <section id="header-serch">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="logo">
+                            <a href="#">
+                                <img src="/Kapee/assets/img/logo.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="search">
+                            <form>
+                                <input type="search" placeholder="Search for products, categories, brands, sku...">
+                                <div class="select-search">
+                                    <select class="search-category">
+                                        <option>All Categories</option>
+                                        <option>Accessories</option>
+                                        <option>Analog</option>
+                                        <option>Anklets</option>
+                                        <option>Beauty Accessory</option>
+                                        <option>Belts</option>
+                                        <option>Bracelets</option>
+                                        <option>Casual Shoes</option>
+                                        <option>Digital</option>
+                                        <option>Dresses</option>
+                                        <option>Earrings</option>
+                                        <option>Electronics</option>
+                                        <option>Formal Shoes</option>
+                                        <option>Handbags</option>
+                                        <option>Hats & Caps</option>
+                                        <option>Jackets & Coats</option>
+                                        <option>Jeans</option>
+                                        <option value="women-jeans">Jeans</option>
+                                        <option>Laptop Bag</option>
+                                        <option>Leather</option>
+                                        <option>Lingerie & Nightwear</option>
+                                        <option>Luggage & Travel</option>
+                                        <option>Makeup Kit</option>
+                                        <option>Necklaces</option>
+                                        <option>Pearl Jewelry</option>
+                                        <option>Sandals & Floaters</option>
+                                        <option>Shirts</option>
+                                        <option>Shorts & Skirts</option>
+                                        <option>Smart Analog</option>
+                                        <option>Smart Watches</option>
+                                        <option>Sneakers</option>
+                                        <option>Socks</option>
+                                        <option>Sunglasses</option>
+                                        <option>T-Shirts</option>
+                                        <option>Tops</option>
+                                        <option>Trolley Bag</option>
+                                        <option>Trousers & Capris</option>
+                                        <option>Wallets</option>
+                                        <option value="men-vallet">Wallets</option>
+                                        <option>Watches</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="search-select">Search</button>
+                                <i class="fas fa-search"></i>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header-account-heart-cart col-lg-3 col-md-3">
+                        <div class="header-account">
+                            <a href="#">
+                                <i class="fas fa-user-tie"></i>
+                                <div class="my-account">
+                                    <small>Hello,</small>
+                                    <span>Sign In</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="header-heart">
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                                <span>0</span>
+                            </a>
+                        </div>
+                        <div class="header-cart">
+                            <a href="#">
+                                <div class="cart-icon">
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <span>0</span>
+                                </div>
+                                <div class="cart-content">
+                                    <small>Cart</small>
+                                    <span>$0.00</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Header page start -->
+        <section id="header-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="category-menu">
+                            <div class="category-menu-title">
+                                <span>Shop By Categories</span>
+                                <i class="fas fa-bars"></i>
+                            </div>
+                            <div class="categories-menu">
+                                <ul class="subcategory-menu-items">
+                                    <li class="subcategory-menu-item">
+                                        <a href="#" class="subcategory-menu-link">
+                                            <span>Men’s Clothing</span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="subcategory-menu-item">
+                                        <a href="#" class="subcategory-menu-link">
+                                            <span>Women’s Clothing</span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="subcategory-menu-item">
+                                        <a href="#" class="subcategory-menu-link">
+                                            <span>Accessories</span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="subcategory-menu-item">
+                                        <a href="#" class="subcategory-menu-link">
+                                            <span>Shoes</span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="subcategory-menu-item">
+                                        <a href="#" class="subcategory-menu-link">
+                                            <span>Jewellery</span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="subcategory-menu-item">
+                                        <a href="#" class="subcategory-menu-link">
+                                            <span>Bags & Backpacks</span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="subcategory-menu-item">
+                                        <a href="#" class="subcategory-menu-link">
+                                            <span>Watches</span>
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                    <li class="subcategory-menu-item">
+                                        <a href="#" class="subcategory-menu-link">
+                                            <span>Dresses</span>
+                                        </a>
+                                    </li>
+                                    <li class="subcategory-menu-item">
+                                        <a href="#" class="subcategory-menu-link">
+                                            <span>Shirts</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <div class="main-pages">
+                            <ul class="main-pages-items">
+                                <li class="main-pages-item">
+                                    <a href="#" class="main-pages-link">
+                                        <span>Home</span>
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                </li>
+                                <li class="main-pages-item">
+                                    <a href="#" class="main-pages-link">
+                                        <span>Shop</span>
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                </li>
+                                <li class="main-pages-item">
+                                    <a href="#" class="main-pages-link">
+                                        <span>Pages</span>
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                </li>
+                                <li class="main-pages-item">
+                                    <a href="#" class="main-pages-link">
+                                        <span>Blog</span>
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                </li>
+                                <li class="main-pages-item">
+                                    <a href="#" class="main-pages-link">
+                                        <span>Elements</span>
+                                        <i class="fas fa-angle-down"></i>
+                                    </a>
+                                </li>
+                                <li class="main-pages-item">
+                                    <a href="#" class="main-pages-link">
+                                        <span>Buy Now</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Fashion start -->
+        <section id="fashion">
+            <div class="container-fluid px-0">
+                <div class="slider">
+                    <div class="owl-carousel owl-them">
+                        <div class="item bg-img" style="background-image: url(/Kapee/assets/img/fashion-slider-1.jpg)">
+                            <div class="title">
+                                <h1>Fashion Collection</h1>
+                                <p><span>Huge Sale</span> Min. 40-80% Off</p>
+                                <a href="#">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="item bg-img" style="background-image: url(/Kapee/assets/img/fashion-slider-2.jpg)">
+                            <div class="title subtitle">
+                                <h1 class="title-content">New Collections 2019</h1>
+                                <p><span>Men's Clothes</span> Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor!</p>
+                                <a href="#">Shop Now</a>
+                            </div>
+                        </div>
+                        <div class="item bg-img" style="background-image: url(/Kapee/assets/img/fashion-slider-3.jpg)">
+                            <div class="title subfashion">
+                                <h1>Festive Feast</h1>
+                                <p><span>Fashion Accessories</span> Minimum 50% Off</p>
+                                <a href="#">Shop Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collection start -->
+        <section id="collection">
+            <div class="container">
+                <div class="row">
+                    <div class="slider">
+                        <div class="owl-carousel owl-them">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="item">
+                                    <div class="collection-items">
+                                        <div class="collection-item">
+                                            <div class="collection-img">
+                                                <img src="/Kapee/assets/img/banner-1-1.jpg" alt="men-collection">
+                                            </div>
+                                            <div class="collection-text">
+                                                <span>Men's Collections</span>
+                                                <h3>Min. 50% Off</h3>
+                                                <a href="#">SHOP NOW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="item">
+                                    <div class="collection-items">
+                                        <div class="collection-item">
+                                            <div class="collection-img">
+                                                <img src="/Kapee/assets/img/banner-2.jpg" alt="women-collection">
+                                            </div>
+                                            <div class="collection-text">
+                                                <span>Women's Collectionss</span>
+                                                <h3>New Fashion</h3>
+                                                <a href="#">SHOP NOW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4">
+                                <div class="item">
+                                    <div class="collection-items">
+                                        <div class="collection-item">
+                                            <div class="collection-img">
+                                                <img src="/Kapee/assets/img/banner-3.jpg" alt="fashion-collection">
+                                            </div>
+                                            <div class="collection-text">
+                                                <span>Fashion's Accessories</span>
+                                                <h3>Up To 60% Off</h3>
+                                                <a href="#">SHOP NOW</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="/Kapee/assets/js/main.js"></script>
+</body>
+
+</html>

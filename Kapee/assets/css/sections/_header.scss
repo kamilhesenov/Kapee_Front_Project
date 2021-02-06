@@ -1,68 +1,67 @@
 // Header-top start
-#header-top{
+#header-top {
     background-color: $main-color;
     max-height: 42px;
     font-size: 12px;
     color: #ffffff;
-    .header-row{
+    .header-row {
         display: flex;
         flex-wrap: wrap;
         margin-right: -15px;
         margin-left: -15px;
-        .header-col-left{
+        .header-col-left {
             line-height: 40px;
             font-size: 12px;
             display: flex;
             flex-direction: row;
-             .language{
-                .language-items{
+            .language {
+                .language-items {
                     margin: 0;
                     padding: 0;
-                    .language-item{
+                    .language-item {
                         position: relative;
                         margin-bottom: 0;
                         @include transition(all 0.5s ease 0s);
-                        &:hover .sublanguge-items{
+                        &:hover .sublanguge-items {
                             visibility: visible;
                             opacity: 1;
                             @include transition(all 0.5s ease 0s);
                         }
-                        &:hover .sublanguage-text{
+                        &:hover .sublanguage-text {
                             color: $main-color !important;
                         }
-                        .language-text{
-                          text-decoration: none;
-                          color: #ffffff;
-                          text-transform: uppercase;
-                          &::after{
-                              content: '';
-                              position: absolute;
-                              top: 0;
-                              left: -12px;
-                              width: 1px;
-                              height: 40px;
-                              background-color: #3885fe;
-                          }
-                          &::before{
-                            content: '';
-                            position: absolute;
-                            top: 0;
-                            left: 75px;
-                            width: 1px;
-                            height: 40px;
-                            background-color: #3885fe;
-                          }
+                        .language-text {
+                            text-decoration: none;
+                            color: #ffffff;
+                            text-transform: uppercase;
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: -12px;
+                                width: 1px;
+                                height: 40px;
+                                background-color: #3885fe;
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 0;
+                                left: 75px;
+                                width: 1px;
+                                height: 40px;
+                                background-color: #3885fe;
+                            }
                         }
-                        i{
+                        i {
                             position: absolute;
                             top: 15px;
                             left: 50px;
                             color: #ffffff;
                             font-size: 12px;
                             margin-left: 5px;
-                            
                         }
-                        .sublanguge-items{
+                        .sublanguge-items {
                             position: absolute;
                             top: 100%;
                             left: -10px;
@@ -75,17 +74,17 @@
                             max-width: 190px;
                             z-index: 99;
                             @include transition(all 0.5s ease 0s);
-                            .sublanguage-item{
+                            .sublanguage-item {
                                 @include transition(all 0.5s ease 0s);
-                                &:hover{
-                                    background-color: #F5FAFF;
+                                &:hover {
+                                    background-color: #f5faff;
                                     @include transition(all 0.5s ease 0s);
                                 }
-                                &:hover a{
+                                &:hover a {
                                     color: $main-color;
                                     @include transition(all 0.5s ease 0s);
                                 }
-                                a{
+                                a {
                                     border-bottom-width: 1px;
                                     border-bottom-style: solid;
                                     border-bottom-color: #e9e9e9;
@@ -101,26 +100,26 @@
                     }
                 }
             }
-            .currency{
+            .currency {
                 margin-left: 40px;
-                .currency-items{
+                .currency-items {
                     margin: 0;
                     padding: 0;
-                    .currency-item{
+                    .currency-item {
                         position: relative;
                         margin-bottom: 0;
                         @include transition(all 0.5s ease 0s);
-                        &:hover .subcurrency-items{
+                        &:hover .subcurrency-items {
                             visibility: visible;
                             opacity: 1;
                             @include transition(all 0.5s ease 0s);
                         }
-                        .currency-text{
+                        .currency-text {
                             text-decoration: none;
                             color: #ffffff;
                             text-transform: uppercase;
-                            &::after{
-                                content: '';
+                            &::after {
+                                content: "";
                                 position: absolute;
                                 top: 0;
                                 right: -18px;
@@ -129,7 +128,7 @@
                                 background-color: #3885fe;
                             }
                         }
-                        i{
+                        i {
                             position: absolute;
                             top: 15px;
                             right: -10px;
@@ -137,7 +136,7 @@
                             font-size: 12px;
                             margin-left: 5px;
                         }
-                        .subcurrency-items{
+                        .subcurrency-items {
                             position: absolute;
                             top: 100%;
                             left: -10px;
@@ -150,17 +149,17 @@
                             max-width: 190px;
                             z-index: 99;
                             @include transition(all 0.5s ease 0s);
-                            .subcurrency-item{
+                            .subcurrency-item {
                                 @include transition(all 0.5s ease 0s);
-                                &:hover{
-                                    background-color: #F5FAFF;
+                                &:hover {
+                                    background-color: #f5faff;
                                     @include transition(all 0.5s ease 0s);
                                 }
-                                &:hover a{
+                                &:hover a {
                                     color: $main-color;
                                     @include transition(all 0.5s ease 0s);
                                 }
-                                a{
+                                a {
                                     border-bottom-width: 1px;
                                     border-bottom-style: solid;
                                     border-bottom-color: #e9e9e9;
@@ -177,20 +176,20 @@
                 }
             }
         }
-        .header-col-right{
+        .header-col-right {
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
             text-transform: uppercase;
             font-size: 12px;
-        .welcome{
+            .welcome {
                 line-height: 40px;
                 position: relative;
-                span{
+                span {
                     font-size: 12px;
                 }
-                &::after{
-                    content: '';
+                &::after {
+                    content: "";
                     position: absolute;
                     top: 0;
                     left: -12px;
@@ -199,17 +198,17 @@
                     background-color: #3885fe;
                 }
             }
-            .page-navbar{
+            .page-navbar {
                 line-height: 40px;
-                .menu-items{
+                .menu-items {
                     display: inline-flex;
                     align-items: center;
-                   .menu-item{
+                    .menu-item {
                         position: relative;
                         padding-left: 20px;
                         margin-bottom: 0;
-                        &::after{
-                            content: '';
+                        &::after {
+                            content: "";
                             position: absolute;
                             top: 0;
                             left: 10px;
@@ -217,18 +216,18 @@
                             height: 40px;
                             background-color: #3885fe;
                         }
-                       a{
+                        a {
                             text-decoration: none;
                             color: #ffffff;
-                            i{
+                            i {
                                 font-size: 12px;
                                 margin-right: 5px;
                             }
                         }
                     }
-                    .menu-item-last{
-                        &::before{
-                            content: '';
+                    .menu-item-last {
+                        &::before {
+                            content: "";
                             position: absolute;
                             top: 0;
                             right: -7px;
@@ -244,7 +243,7 @@
 }
 
 // Header-search start
-#header-serch{
+#header-serch {
     background-color: #ffffff;
     height: 100px;
     color: #555;
@@ -252,28 +251,28 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    .logo{
-        a{
+    .logo {
+        a {
             color: #333;
             display: inline-block;
             padding-top: 5px;
             padding-bottom: 5px;
-            img{
+            img {
                 max-width: 126px;
                 vertical-align: middle;
             }
         }
     }
-    .search{
+    .search {
         align-items: center;
         margin-top: 5px;
-         form{
-             border: 1px solid #e9e9e9;
-             background-color: #fff;
-             display: flex;
-             justify-content: space-between;
-             align-items: center;
-            input{
+        form {
+            border: 1px solid #e9e9e9;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            input {
                 background-color: #fff;
                 color: #555;
                 border-right-width: 1px;
@@ -284,20 +283,20 @@
                 border-radius: 0;
                 font-family: inherit;
                 font-size: 100%;
-                &::placeholder{
+                &::placeholder {
                     font-size: 16px;
                 }
             }
-            input[type="search"]{
+            input[type="search"] {
                 outline: none;
                 display: block;
                 line-height: 2;
                 padding: 6px 12px;
                 height: 42px;
                 width: 100%;
-               }
-            .select-search{
-                .search-category{
+            }
+            .select-search {
+                .search-category {
                     color: #555;
                     background-color: #fff;
                     border-left-width: 1px !important;
@@ -313,19 +312,19 @@
                     line-height: 1.6;
                     text-transform: none;
                     outline: none;
-                    option{
+                    option {
                         background-color: #fff;
                         color: #555;
                         line-height: 1.6;
                     }
                 }
             }
-            .search-select{
+            .search-select {
                 position: relative;
                 color: #fff;
-                background-color: #2370F4;
+                background-color: #2370f4;
             }
-            button[type="submit"]{
+            button[type="submit"] {
                 font-size: 0;
                 border-radius: 0;
                 box-shadow: none;
@@ -340,7 +339,7 @@
                 width: 70px;
                 margin-left: 10px;
             }
-            i{
+            i {
                 position: absolute;
                 top: 18px;
                 right: 35px;
@@ -350,12 +349,12 @@
             }
         }
     }
-    .header-account-heart-cart{
+    .header-account-heart-cart {
         display: flex;
         justify-content: center;
         align-items: center;
-        .header-account{
-             a{
+        .header-account {
+            a {
                 color: #333;
                 font-weight: 600;
                 display: flex;
@@ -364,65 +363,63 @@
                 text-transform: uppercase;
                 text-decoration: none;
                 @include transition(all 0.5s ease 0s);
-                &:hover{
+                &:hover {
                     color: $main-color;
                     @include transition(all 0.5s ease 0s);
                 }
-                i{
+                i {
                     font-size: 22px;
-                    font-weight: 400;
                     margin-right: 7px;
                 }
-                .my-account{
+                .my-account {
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
-                    small{
+                    small {
                         font-size: 90%;
                         font-weight: 400;
                         line-height: 1.5;
                     }
-                    span{
+                    span {
                         font-weight: 600;
                         font-size: 105%;
                     }
                 }
             }
         }
-        .header-heart{
+        .header-heart {
             margin-left: 30px;
-            a{
+            a {
                 color: #333;
                 @include transition(all 0.5s ease 0s);
-                &:hover{
+                &:hover {
                     color: $main-color;
                     @include transition(all 0.5s ease 0s);
                 }
-                i{
+                i {
                     position: relative;
                     font-size: 22px;
-                    font-weight: 400;
                 }
-                span{
-                   position: absolute;
-                   top: 12px;
-                   right: 42%;
-                   background-color: $main-color;
-                   color: #ffffff;
-                   border-radius: 50%;
-                   font-size: 10px;
-                   width: 16px;
-                   height: 16px;
-                   line-height: 16px;
-                   text-align: center;
+                span {
+                    position: absolute;
+                    top: 12px;
+                    right: 42%;
+                    background-color: $main-color;
+                    color: #ffffff;
+                    border-radius: 50%;
+                    font-size: 10px;
+                    width: 16px;
+                    height: 16px;
+                    line-height: 16px;
+                    text-align: center;
                 }
             }
         }
-        .header-cart{
+        .header-cart {
             font-weight: 600;
             font-size: 14px;
             margin-left: 30px;
-            a{
+            a {
                 color: #333;
                 display: flex;
                 flex-direction: row;
@@ -430,17 +427,17 @@
                 justify-content: center;
                 text-decoration: none;
                 @include transition(all 0.5s ease 0s);
-                &:hover{
+                &:hover {
                     color: $main-color;
                     @include transition(all 0.5s ease 0s);
                 }
-                .cart-icon{
+                .cart-icon {
                     margin-right: 10px;
                     position: relative;
-                    i{
+                    i {
                         font-size: 22px;
                     }
-                    span{
+                    span {
                         position: absolute;
                         top: -9px;
                         left: 43%;
@@ -454,16 +451,150 @@
                         text-align: center;
                     }
                 }
-                .cart-content{
-                    small{
+                .cart-content {
+                    small {
                         display: block;
                         line-height: 1.3;
                         font-size: 90%;
                         font-weight: 400;
                     }
-                    span{
+                    span {
                         font-weight: 600;
                         font-size: 105%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Header-page start
+#header-page {
+    background-color: #ffffff;
+    height: 48px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #e9e9e9;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #e9e9e9;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .category-menu {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        @include transition(all 0.5s ease 0s);
+        &:hover .categories-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+            @include transition(all 0.5s ease 0s);
+        }
+        .category-menu-title {
+            height: 48px;
+            background-color: $main-color;
+            color: #ffffff;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 0 16px;
+            margin-bottom: -1px;
+            text-transform: uppercase;
+            span {
+                margin-right: 10px;
+            }
+        }
+        .categories-menu {
+            background-color: #fff;
+            border-top-width: 1px;
+            border-bottom-width: 1px;
+            border-left-width: 1px;
+            border-right-width: 1px;
+            border-style: solid;
+            border-color: #e9e9e9;
+            position: absolute;
+            width: 100%;
+            z-index: 97;
+            box-shadow: 5px 10px #ffffff;
+            transform: translateY(14px);
+            opacity: 0;
+            visibility: hidden;
+            @include transition(all 0.5s ease 0s);
+            .subcategory-menu-items {
+                .subcategory-menu-item {
+                    position: static;
+                    border-bottom-width: 1px;
+                    border-bottom-style: solid;
+                    border-bottom-color: #e9e9e9;
+                    margin-bottom: 0;
+                    .subcategory-menu-link {
+                        text-transform: inherit;
+                        letter-spacing: 0.2px;
+                        font-weight: 700;
+                        font-style: normal;
+                        font-size: 14px;
+                        color: #333;
+                        padding: 14px 16px;
+                        line-height: 20px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-decoration: none;
+                        @include transition(all 0.5s ease 0s);
+                        &:hover {
+                            color: $main-color;
+                            @include transition(all 0.5s ease 0s);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .main-pages {
+        .main-pages-items {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            .main-pages-item {
+                position: relative;
+                margin-bottom: 0;
+                .main-pages-link {
+                    height: 48px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.2px;
+                    font-weight: 700;
+                    font-style: normal;
+                    font-size: 13px;
+                    color: #333;
+                    padding: 0 10px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    text-decoration: none;
+                    @include transition(all 0.5s ease 0s);
+                    &:hover {
+                        color: $main-color;
+                        @include transition(all 0.5s ease 0s);
+                    }
+                    &:hover i {
+                        color: $main-color;
+                        @include transition(all 0.5s ease 0s);
+                    }
+                    i {
+                        margin-left: 5px;
+                        text-align: center;
+                        vertical-align: middle;
+                        color: #333;
+                        @include transition(all 0.5s ease 0s);
                     }
                 }
             }

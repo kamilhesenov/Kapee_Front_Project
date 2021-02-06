@@ -1,6 +1,6 @@
 body{
     // font-family: "Arial, Helvetica, sans-serif";
-    font-family: $main_font_family !important;
+    font-family: $main_font_family;
     font-weight: 400;
     font-style: normal;
     font-size: 12px;
@@ -8,6 +8,7 @@ body{
     text-align: left;
 }
 ul{
+    margin: 0;
     padding: 0;
     list-style: none;
 }
