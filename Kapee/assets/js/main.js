@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+
     // Fashion corusel start
     if ($("#fashion").length) {
         $('#fashion .slider .owl-carousel').owlCarousel({
@@ -12,8 +14,7 @@ $(document).ready(function () {
             autoplayHoverPause: true,
         })
     }
-    $( ".slider .owl-carousel .owl-prev").html('<i class="fas fa-angle-left"></i>');
-    $( ".slider .owl-carousel .owl-next").html('<i class="fas fa-angle-right"></i>');
+    
     
     // Collection corusel start
     if ($("#collection").length) {
@@ -40,8 +41,8 @@ $(document).ready(function () {
     if ($("#products").length) {
         $('#products .slider .owl-carousel').owlCarousel({
             dots: false,
-            loop: true,
-            nav: true,
+            loop: false,
+            nav: false,
             mouseDrag: true,
             responsive: {
                 0: {
@@ -61,11 +62,12 @@ $(document).ready(function () {
           })
     }
 
-    $(".product-color").click(function(e){
-        e.preventDefault();
-        $(".product-color").removeClass("active").next().addClass("active");
+    // $(".product-color").click(function(e){
+    //     e.preventDefault();
+    //     console.log($(".product-color"));
+    //     // $(".product-color").removeClass("active").next().addClass("active");
         
-    })
+    // })
      
 
     // Category corusel start
@@ -89,22 +91,79 @@ $(document).ready(function () {
             }
         })
     }
-    $( ".slider .owl-carousel .owl-prev").html('<i class="fas fa-angle-left"></i>');
-    $( ".slider .owl-carousel .owl-next").html('<i class="fas fa-angle-right"></i>');
-
+    
 
     // Customer corusel start
     if ($("#customer").length) {
         $('#customer .customer-testimonial .owl-carousel').owlCarousel({
-            items: 1,
-            dots: false,
-            loop: true,
+            dots: true,
+            loop: false,
             nav: true,
             mouseDrag: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
         })
     }
-    // $( ".slider .owl-carousel .owl-prev").html('<i class="fas fa-angle-left"></i>');
-    // $( ".slider .owl-carousel .owl-next").html('<i class="fas fa-angle-right"></i>');
+    
+    // News corusel start
+    if ($("#news").length) {
+        $('#news .news-content .owl-carousel').owlCarousel({
+            margin: 30,
+            dots: false,
+            loop: false,
+            nav: true,
+            mouseDrag: true,
+            autoplay: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    }
+    $( ".slider .owl-carousel .owl-prev").html('<i class="fas fa-angle-left"></i>');
+    $( ".slider .owl-carousel .owl-next").html('<i class="fas fa-angle-right"></i>');
+
+
+    // Brand corusel start
+    if ($("#brand").length) {
+        $('#brand .owl-carousel').owlCarousel({
+            margin: 30,
+            dots: false,
+            loop: false,
+            nav: true,
+            mouseDrag: true,
+            autoplay: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    }
+    $( ".slider .owl-carousel .owl-prev").html('<i class="fas fa-angle-left"></i>');
+    $( ".slider .owl-carousel .owl-next").html('<i class="fas fa-angle-right"></i>');
 
     
 })
