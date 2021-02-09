@@ -14,6 +14,28 @@ $(document).ready(function () {
             autoplayHoverPause: true,
         })
     }
+
+
+    // category-slider corusel start
+    if ($("#category-slider").length) {
+        $('#category-slider .category-slider-content .owl-carousel').owlCarousel({
+            dots: true,
+            loop: false,
+            nav: true,
+            mouseDrag: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 5
+                },
+                1000: {
+                    items: 10
+                }
+            }
+        })
+    }
     
     
     // Collection corusel start
@@ -62,12 +84,13 @@ $(document).ready(function () {
           })
     }
 
-    // $(".product-color").click(function(e){
-    //     e.preventDefault();
-    //     console.log($(".product-color"));
-    //     // $(".product-color").removeClass("active").next().addClass("active");
-        
-    // })
+    $(".product-color").click(function(){
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+        console.log($(this).attr("data-id"));
+        $(this).parents(".product-group").find(`.product-img a img[data-id=${$(this).attr("data-id")}]`).removeClass("hide-img");
+        $(this).parents(".product-group").find(`.product-img a img[data-id=${$(this).attr("data-id")}]`).siblings().addClass("hide-img");
+    })
      
 
     // Category corusel start

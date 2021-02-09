@@ -152,6 +152,120 @@
     }
 }
 
+// Category Slider start
+#category-slider{
+    margin-top: 80px;
+    margin-bottom: 50px;
+   .category-slider-content{
+    @include transition(all 0.5s ease 0s);
+       &:hover .owl-nav .owl-next{
+           opacity: 1;
+           visibility: visible;
+           @include transition(all 0.5s ease 0s);
+       }
+       &:hover .owl-nav .owl-prev{
+        opacity: 1;
+        visibility: visible;
+        @include transition(all 0.5s ease 0s);
+    }
+      .item{
+        margin-right: 30px;
+         a{
+            display: block;
+            text-decoration: none;
+            color: #333333;
+            @include transition(all 0.5s ease 0s);
+            &:hover .category-slider-img{
+                border-color: #f28232;
+                @include transition(all 0.5s ease 0s);
+            }
+            &:hover .category-slider-text p{
+                 color: $main-color;
+                 @include transition(all 0.5s ease 0s);
+            }
+           .category-slider-img{
+            border: 1px solid #e6e6e6;
+            border-radius: 50%;
+            box-sizing: border-box;
+            width: 74px;
+            height: 74px;
+            @include transition(all 0.5s ease 0s);
+               img{
+                border-radius: 50%;
+                max-width: 100%;
+               }
+            }
+            .category-slider-text{
+                margin-top: 3px;
+                p{
+                text-align: center;
+                font-size: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+                @include transition(all 0.5s ease 0s);
+                }
+            }  
+         } 
+      }
+      .owl-nav {
+        .owl-next {
+            position: absolute;
+            top: 4px;
+            right: -8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px #cccccc;
+            width: 40px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 50px;
+            color: #333333;
+            @include transition(all 0.5s);
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            &:hover {
+                background-color: $main-color;
+                color: #ffffff;
+                @include transition(all 0.5s);
+            }
+            &:focus {
+                display: none;
+            }
+        }
+        .owl-prev {
+            position: absolute;
+            top: 4px;
+            left: -43px;
+            background-color: #fff;
+            box-shadow: 0 0 10px #cccccc;
+            width: 40px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333333;
+            @include transition(all 0.5s);
+            font-size: 50px;
+            z-index: 1;
+            opacity: 0;
+            visibility: hidden;
+            &:hover {
+                background-color: $main-color;
+                color: #ffffff;
+                @include transition(all 0.5s);
+            }
+            &:focus {
+                display: none;
+            }
+        }
+    }
+   } 
+}
+
 // Colection start
 #collection {
     background-color: #fff;
@@ -339,7 +453,7 @@
                                 margin-bottom: 8px;
                                 position: relative;
                                 @include transition(all 0.5s ease-out);
-                                &:hover .active-image {
+                                &:hover .hover-image {
                                     opacity: 1;
                                     visibility: visible;
                                     @include transition(all 0.5s ease-out);
@@ -394,12 +508,19 @@
                                         border-style: none;
                                         max-width: 100%;
                                     }
-                                    .active-image {
+                                    .hover-image {
                                         left: 0;
                                         opacity: 0;
                                         position: absolute;
                                         top: 0;
                                         visibility: hidden;
+                                        @include transition(all 0.5s ease-out);
+                                    }
+                                    .hide-img{
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        opacity: 0;
                                         @include transition(all 0.5s ease-out);
                                     }
                                 }

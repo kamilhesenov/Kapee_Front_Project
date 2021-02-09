@@ -1747,6 +1747,197 @@ a {
   display: none;
 }
 
+#category-slider {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+#category-slider .category-slider-content {
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+#category-slider .category-slider-content:hover .owl-nav .owl-next {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+#category-slider .category-slider-content:hover .owl-nav .owl-prev {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+#category-slider .category-slider-content .item {
+  margin-right: 30px;
+}
+
+#category-slider .category-slider-content .item a {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+#category-slider .category-slider-content .item a:hover .category-slider-img {
+  border-color: #f28232;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+#category-slider .category-slider-content .item a:hover .category-slider-text p {
+  color: #2370F4;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+#category-slider .category-slider-content .item a .category-slider-img {
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 74px;
+  height: 74px;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+#category-slider .category-slider-content .item a .category-slider-img img {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+#category-slider .category-slider-content .item a .category-slider-text {
+  margin-top: 3px;
+}
+
+#category-slider .category-slider-content .item a .category-slider-text p {
+  text-align: center;
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -moz-transition: all 0.5s ease 0s;
+  -ms-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+}
+
+#category-slider .category-slider-content .owl-nav .owl-next {
+  position: absolute;
+  top: 4px;
+  right: -8px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  width: 40px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-size: 50px;
+  color: #333333;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#category-slider .category-slider-content .owl-nav .owl-next:hover {
+  background-color: #2370F4;
+  color: #ffffff;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+#category-slider .category-slider-content .owl-nav .owl-next:focus {
+  display: none;
+}
+
+#category-slider .category-slider-content .owl-nav .owl-prev {
+  position: absolute;
+  top: 4px;
+  left: -43px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  width: 40px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #333333;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  font-size: 50px;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#category-slider .category-slider-content .owl-nav .owl-prev:hover {
+  background-color: #2370F4;
+  color: #ffffff;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+#category-slider .category-slider-content .owl-nav .owl-prev:focus {
+  display: none;
+}
+
 #collection {
   background-color: #fff;
   margin-top: 50px;
@@ -2034,7 +2225,7 @@ a {
   -o-transition: all 0.5s ease-out;
 }
 
-#products .slider .tab-content .tab-pane .item .product-group .product-item .product-img:hover .active-image {
+#products .slider .tab-content .tab-pane .item .product-group .product-item .product-img:hover .hover-image {
   opacity: 1;
   visibility: visible;
   transition: all 0.5s ease-out;
@@ -2110,12 +2301,24 @@ a {
   max-width: 100%;
 }
 
-#products .slider .tab-content .tab-pane .item .product-group .product-item .product-img a .active-image {
+#products .slider .tab-content .tab-pane .item .product-group .product-item .product-img a .hover-image {
   left: 0;
   opacity: 0;
   position: absolute;
   top: 0;
   visibility: hidden;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+#products .slider .tab-content .tab-pane .item .product-group .product-item .product-img a .hide-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
