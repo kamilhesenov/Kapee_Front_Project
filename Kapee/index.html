@@ -8,14 +8,17 @@
     <script src="https://kit.fontawesome.com/1f2890de0d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="/Kapee/assets/css/style.css">
 </head>
 
 <body>
 
     <header>
+
+        <!-- Mobile responsiv sections black start -->
+        <div class="bg-black"></div>
+
         <!-- Header top start-->
         <section id="header-top">
             <div class="container">
@@ -96,13 +99,24 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
-                        <div class="logo">
+                        <div class="logo ">
                             <a href="#">
                                 <img src="/Kapee/assets/img/logo.png" alt="logo">
                             </a>
                         </div>
+                        <div class="mobile-navbar">
+                            <a href="#">
+                                <span class="navbar-icon"></span>
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </div>
+                        <div class="logo-mobil">
+                           <a href="#">
+                               <img src="/Kapee/assets/img/logo-light.png" alt="logo">
+                           </a>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 search-product-icon">
                         <div class="search">
                             <form>
                                 <input type="search" placeholder="Search for products, categories, brands, sku...">
@@ -153,9 +167,14 @@
                                 <button type="submit" class="search-select">Search</button>
                                 <i class="fas fa-search"></i>
                             </form>
+                            <div class="add-product">
+                                <a href="#">
+                                    <i class="far fa-plus-square"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="header-account-heart-cart col-lg-3 col-md-3">
+                    <div class="header-account-heart-cart">
                         <div class="header-account">
                             <a href="#">
                                 <i class="fas fa-user-tie"></i>
@@ -300,7 +319,274 @@
                 </div>
             </div>
         </section>
+
+        <!-- Mobile responsive start -->
+        <section id="left-sidebar">
+            <div class="mobile-menu">
+                <div class="menu-header">
+                    <a href="#"><i class="far fa-user"></i> Login/Signup</a>
+                    <a href="#"><i class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="mobile-nav-tabs">
+                    <ul>
+                        <li data-id="1" class="primary active">
+                            <span>Menu</span>
+                        </li>
+                        <li data-id="2" class="primary">
+                            <span>Categories</span>
+                        </li>
+                    </ul>
+                </div>
+                <div data-id="1" class="mobile-primary-menu">
+                    <ul class="main-munu">
+                        <li class="munu-item ">
+                            <a href="#" class="menu-btn d-flex justify-content-between">
+                                <span>Home</span>
+                                <i class="fas fa-plus"></i>
+                            </a>
+                            <ul class="sab-menu">
+                                <li>
+                                    <a href="#">
+                                        <span>Basic</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Catalog</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Marketplace</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Fullscreen</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Boxed</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Electronics</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Dokan</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>WCMP</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>WCVenoders</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>WCFM</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>RTL</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li class="munu-item">
+                            <a href="#">
+                                <span>Shop</span>
+                            </a>
+                        </li>
+                        <li class="munu-item">
+                            <a href="#" class="menu-buton d-flex justify-content-between">
+                                <span>Pages</span>
+                                <i class="fas fa-plus"></i>
+                            </a>
+                            <ul class="sab-menu ">
+                                <li>
+                                    <a href="#">
+                                        <span>About Us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Contact Us</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>FAQ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span>Our Team</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li class="munu-item">
+                            <a href="#">
+                                <span>Blog</span>
+                            </a>
+                        </li>
+                        <li class="munu-item">
+                            <a href="#">
+                                <span>Portfolio</span>
+                            </a>
+                        </li>
+                        <li class="munu-item">
+                            <a href="#">
+                                <span>Elements</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div data-id="2" class="mobile-category-menu d-none">
+                    <ul class="main-menu">
+                        <li class="menu-item">
+                            <a href="#">
+                                <span>Men’s Clothing</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <span>Women’s Clothing</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <span>Accessories</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <span>Shoes</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-btn d-flex justify-content-between">
+                                <span>Jewellery</span>
+                                <i class="fas fa-plus"></i>
+                            </a>
+                            <ul class="sub-menu d-none">
+                                <li>
+                                 <a href="#">
+                                    <span>Precious Jewellery</span>
+                                 </a>
+                                </li>
+                                <li>
+                                 <a href="#">
+                                    <span>Silver Jewellery</span>
+                                 </a>
+                                </li>
+                                <li>
+                                 <a href="#">
+                                    <span>Artificial Jewellery</span>
+                                 </a>
+                                </li>
+                            </ul>
+                            
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <span>Bags & Backpacks</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <span>Watches</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <span>Dresses</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">
+                                <span>Shirts</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-topbar">
+                    <div class="language">
+                        <ul>
+                            <li>
+                                <a href="#">English</a>
+                                <ul class="sab-dropdown">
+                                    <li>
+                                        <a href="#">Franch</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Deutsch</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Arabic</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="currency">
+                        <ul>
+                            <li>
+                                <a href="#">$ Dollar (US)</a>
+                                <ul class="sub-dropdown">
+                                    <li>
+                                        <a href="#">₹ RUPEE (INR)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">£ Pound (UK)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">€ Euro (EUR)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-link">
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-flickr"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-rss"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </header>
+
     <main>
         <!-- Fashion start -->
         <section id="fashion">
@@ -308,21 +594,21 @@
                 <div class="slider">
                     <div class="owl-carousel owl-them">
                         <div class="item bg-img" style="background-image: url(/Kapee/assets/img/fashion-slider-1.jpg)">
-                            <div class="title">
+                            <div class="title text-style-left">
                                 <h1>Fashion Collection</h1>
                                 <p><span>Huge Sale</span> Min. 40-80% Off</p>
                                 <a href="#">Shop Now</a>
                             </div>
                         </div>
                         <div class="item bg-img" style="background-image: url(/Kapee/assets/img/fashion-slider-2.jpg)">
-                            <div class="title subtitle">
-                                <h1 class="title-content">New Collections 2019</h1>
+                            <div class="title text-style-right">
+                                <h1>New Collections 2019</h1>
                                 <p><span>Men's Clothes</span> Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor!</p>
                                 <a href="#">Shop Now</a>
                             </div>
                         </div>
                         <div class="item bg-img" style="background-image: url(/Kapee/assets/img/fashion-slider-3.jpg)">
-                            <div class="title subfashion">
+                            <div class="title text-style-left">
                                 <h1>Festive Feast</h1>
                                 <p><span>Fashion Accessories</span> Minimum 50% Off</p>
                                 <a href="#">Shop Now</a>
@@ -334,10 +620,306 @@
         </section>
 
         <!-- Category slider start -->
-        <section id="category-slider">
+        <section id="category-sliders">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12">
+                        <div class="category-slider-content">
+                            <div class="owl-carousel owl-them">
+                                <div class="item">
+                                   <a href="#">
+                                    <div class="category-slider-img">
+                                       <img src="/Kapee/assets/img/seninicin.png" alt="seninicin">
+                                    </div>
+                                      <div class="category-slider-text">
+                                          <p>Sana Özel</p>
+                                      </div>
+                                   </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/coksatanlar.png" alt="cox satanlar">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Sen De Al!</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/trendyolmilla__brand__40.png" alt="trendyolmilla">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>TrendyolMilla</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/EglenceWeb_202012301831.jpg" alt="Eglence">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Oyun & Eğlence</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/happiness__brand__8727.png" alt="happiness">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Happiness İst.</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/Logopull_202005120822.png" alt="Logopull">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Pull & Bear</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/hummel__brand__7770.png" alt="hummel">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>HUMMEL</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/trend-alacati-stili__brand__13025.png" alt="trend-alacati-stili">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Trend:Alaçatı</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/koton__brand__842.png" alt="koton">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Koton</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/uspolo__brand__13054.png" alt="uspolo__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>U.S POLO</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/pierre-cardin__brand__121.png" alt="pierre-cardin__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Pierre Cardin</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/mango__brand__13904.png" alt="mango__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Mango</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/adidas__brand__15.png" alt="adidas__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>adidas</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/nike__brand__1479.png" alt="nike__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Nike</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/cool--sexy__brand__564.png" alt="cool--sexy__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Cool & Sexy</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/Avvalogo_202004211756.jpg" alt="Avvalogo">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Avva</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/olalook.jpg" alt="olalook">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Olalook</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/Xiaomi_202003210018.jpg" alt="Xiaomi">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Xiaomi</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/newbalance__brand__865.png" alt="newbalance__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>New Balance</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/trendyolman__brand__15508.png" alt="trendyolman__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>TrendyolMan</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/dilvin__brand__242.png" alt="dilvin__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Dilvin</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/mavi__brand__18.png" alt="mavi__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Mavi</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/dsdamat__brand__1471.png" alt="dsdamat__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>D'S Damat</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/ipekyol__brand__866.png" alt="ipekyol__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>İpekyol</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/puma__brand__17.png" alt="puma__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Puma</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/Bershka_202003210018.jpg" alt="Bershka">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Bershka</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/sans__brand__10739.png" alt="sans__brand">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Şans</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/TommyHilfiger_202003210018.jpg" alt="TommyHilfiger">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>Tommy Hilfiger</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                                 <div class="item">
+                                    <a href="#">
+                                     <div class="category-slider-img">
+                                        <img src="/Kapee/assets/img/MangoMan_202003210018.jpg" alt="MangoMan">
+                                     </div>
+                                       <div class="category-slider-text">
+                                           <p>MANGO Man</p>
+                                       </div>
+                                    </a>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 category-corusel">
                         <div class="category-slider-content">
                             <div class="owl-carousel owl-them">
                                 <div class="item">
@@ -640,60 +1222,52 @@
         <!-- Collection start -->
         <section id="collection">
             <div class="container">
-                <div class="row">
                     <div class="slider">
                         <div class="owl-carousel owl-them">
-                            <div class="col-lg-4 col-md-4">
-                                <div class="item">
-                                    <div class="collection-items">
-                                        <div class="collection-item">
-                                            <div class="collection-img">
-                                                <img src="/Kapee/assets/img/banner-1-1.jpg" alt="men-collection">
-                                            </div>
-                                            <div class="collection-text">
-                                                <span>Men's Collections</span>
-                                                <h3>Min. 50% Off</h3>
-                                                <a href="#">SHOP NOW</a>
-                                            </div>
+                            <div class="item">
+                                <div class="collection-items">
+                                    <div class="collection-item">
+                                        <div class="collection-img">
+                                            <img src="/Kapee/assets/img/banner-1-1.jpg" alt="men-collection">
+                                        </div>
+                                        <div class="collection-text">
+                                            <span>Men's Collections</span>
+                                            <h3>Min. 50% Off</h3>
+                                            <a href="#">SHOP NOW</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4">
-                                <div class="item">
-                                    <div class="collection-items">
-                                        <div class="collection-item">
-                                            <div class="collection-img">
-                                                <img src="/Kapee/assets/img/banner-2.jpg" alt="women-collection">
-                                            </div>
-                                            <div class="collection-text">
-                                                <span>Women's Collectionss</span>
-                                                <h3>New Fashion</h3>
-                                                <a href="#">SHOP NOW</a>
-                                            </div>
+                            <div class="item">
+                                <div class="collection-items">
+                                    <div class="collection-item">
+                                        <div class="collection-img">
+                                            <img src="/Kapee/assets/img/banner-2.jpg" alt="women-collection">
+                                        </div>
+                                        <div class="collection-text">
+                                            <span>Women's Collectionss</span>
+                                            <h3>New Fashion</h3>
+                                            <a href="#">SHOP NOW</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4">
-                                <div class="item">
-                                    <div class="collection-items">
-                                        <div class="collection-item">
-                                            <div class="collection-img">
-                                                <img src="/Kapee/assets/img/banner-3.jpg" alt="fashion-collection">
-                                            </div>
-                                            <div class="collection-text">
-                                                <span>Fashion's Accessories</span>
-                                                <h3>Up To 60% Off</h3>
-                                                <a href="#">SHOP NOW</a>
-                                            </div>
+                            <div class="item">
+                                <div class="collection-items">
+                                    <div class="collection-item">
+                                        <div class="collection-img">
+                                            <img src="/Kapee/assets/img/banner-3.jpg" alt="fashion-collection">
+                                        </div>
+                                        <div class="collection-text">
+                                            <span>Fashion's Accessories</span>
+                                            <h3>Up To 60% Off</h3>
+                                            <a href="#">SHOP NOW</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
         
@@ -714,8 +1288,7 @@
                       </ul>
                       <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="best-seling" role="tabpanel" aria-labelledby="home-tab">
-                            <div class="row">
-                                <div class="owl-carousel owl-them">
+                            <div class="owl-carousel owl-them">
                                     <div class="item">
                                         <div class="product-group">
                                             <div class="product-item">
@@ -729,10 +1302,10 @@
                                                         </a>
                                                     </div>
                                                     <a href="#">
-                                                        <img data-id="1" src="/Kapee/assets/img/Solid-Men-Hooded-Blue-Grey-T-Shirt-300x350.jpg" alt="Men">
-                                                        <img data-id="2" class="hide-img" src="/Kapee/assets/img/Men-Hooded-Charcoal-Grey-T-Shirt-1-300x350.jpg" alt="">
-                                                        <img data-id="3" class="hide-img" src="/Kapee/assets/img/Men-Hooded-Colourblocked-Maroon-T-Shirt-1-300x350.jpg" alt="">
-                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Solid-Men-Hooded-Blue-Grey-T-Shirt-2-300x350.jpg" alt="Men">
+                                                        <img data-id="1" src="/Kapee/assets/img/Solid-Men-Hooded-Blue-Grey-T-Shirt-300x350.jpg" alt="Men-Hooded-Blue-T-Shirt">
+                                                        <img data-id="2" class="hide-img" src="/Kapee/assets/img/Men-Hooded-Charcoal-Grey-T-Shirt-1-300x350.jpg" alt="Men-Hooded-Grey-T-Shirt">
+                                                        <img data-id="3" class="hide-img" src="/Kapee/assets/img/Men-Hooded-Colourblocked-Maroon-T-Shirt-1-300x350.jpg" alt="Men-Hooded-Red-T-Shirt">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Solid-Men-Hooded-Blue-Grey-T-Shirt-2-300x350.jpg" alt="Men-Hooded-Blue-Grey-T-Shirt">
                                                     </a>
                                                  </div>
                                                  <div class="product-text">
@@ -775,13 +1348,13 @@
                                                     <div class="product-variations">
                                                         <div class="product-colors">
                                                             <span data-id="1" class="product-color active">
-                                                                <span class="bluer-color"></span>
+                                                                <span data-toggle="tooltip" data-placement="top" title="Blue" class="bluer-color"></span>
                                                             </span>
                                                             <span data-id="2" class="product-color">
-                                                                <span class="grey-color"></span>
+                                                                <span data-toggle="tooltip" data-placement="top" title="Grey" class="grey-color"></span>
                                                             </span>
                                                             <span data-id="3" class="product-color">
-                                                                <span class="dark-red-color"></span>
+                                                                <span data-toggle="tooltip" data-placement="top" title="Maroon" class="dark-red-color"></span>
                                                             </span>
                                                         </div>
                                                         <div class="product-sizes">
@@ -831,7 +1404,7 @@
                                                     </div>
                                                     <div class="product-price">
                                                         <span class="price">
-                                                            <span>85.00</span>
+                                                            <span>$85.00</span>
                                                         </span>
                                                     </div>
                                                     <div class="product-buttons">
@@ -862,8 +1435,10 @@
                                                         </a>
                                                     </div>
                                                     <a href="#">
-                                                        <img src="/Kapee/assets/img/Women-Off-White-Printed-Blouson-Top-300x350.jpg" alt="Women">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Women-Off-White-Printed-Blouson-Top-2-300x350.jpg" alt="Women">
+                                                        <img data-id="1" src="/Kapee/assets/img/Women-Off-White-Printed-Blouson-Top-300x350.jpg" alt="Women-Off-White-Printed-Blouson">
+                                                        <img class="hide-img" data-id="2" src="/Kapee/assets/img/Women-Blue-Printed-Blouson-Top-1-300x350.jpg" alt="Women-Off-White-Printed-Blouson">
+                                                        <img class="hide-img" data-id="3" src="/Kapee/assets/img/Women-Off-White-Printed-Top-1-300x350.jpg" alt="Women-Off-White-Printed-Blouson">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Women-Off-White-Printed-Blouson-Top-2-300x350.jpg" alt="Women-Off-White-Printed-Blouson">
                                                     </a>
                                                  </div>
                                                  <div class="product-text">
@@ -901,14 +1476,14 @@
                                                     </div>
                                                     <div class="product-variations">
                                                         <div class="product-colors">
-                                                            <span class="product-color active">
-                                                                <span class="red-color"></span>
+                                                            <span data-id="1" class="product-color active">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Red" class="red-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="bluer-color"></span>
+                                                            <span data-id="2" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Sky Blue" class="bluer-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="white-color"></span>
+                                                            <span data-id="3" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="White" class="white-color"></span>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -924,8 +1499,9 @@
                                                         </a>
                                                     </div>
                                                     <a href="#">
-                                                        <img src="/Kapee/assets/img/Unisex-Blue-Graphic-Backpack-300x350.jpg" alt="Bag">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Unisex-Blue-Graphic-Backpack-2-430x502.jpg" alt="Bag">
+                                                        <img data-id="1" src="/Kapee/assets/img/Unisex-Blue-Graphic-Backpack-300x350.jpg" alt="Blue-Backpack">
+                                                        <img class="hide-img" data-id="2" src="/Kapee/assets/img/Unisex-Red-Orange-Brand-Logo-Backpack-1-430x502.jpg" alt="Red-Orange-Brand-Logo-Backpack">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Unisex-Blue-Graphic-Backpack-2-430x502.jpg" alt="Blue-Backpack">
                                                     </a>
                                                 </div>
                                                 <div class="product-text">
@@ -967,11 +1543,11 @@
                                                     </div>
                                                     <div class="product-variations">
                                                         <div class="product-colors">
-                                                            <span class="product-color active">
-                                                                <span class="dark-bluer-color"></span>
+                                                            <span data-id="1" class="product-color active">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Dark Blue" class="dark-bluer-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="red-color"></span>
+                                                            <span data-id="2" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Red" class="red-color"></span>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -1083,14 +1659,14 @@
                                                         </div>
                                                     </div>
                                                     <div class="product-variations">
-                                                        <div class="product-counts">
-                                                             <span class="product-count active">
+                                                        <div class="product-sizes">
+                                                             <span class="product-size active">
                                                                     <span>30</span>
                                                                 </span>
-                                                                <span class="product-count">
+                                                                <span class="product-size">
                                                                     <span>32</span>
                                                                 </span>
-                                                                <span class="product-count">
+                                                                <span class="product-size">
                                                                     <span>34</span>
                                                                 </span>
                                                           </div>
@@ -1109,8 +1685,10 @@
                                                         </a>
                                                     </div>
                                                     <a href="#">
-                                                        <img src="/Kapee/assets/img/Women-Blue-Skinny-Fit-Stretchable-Jeans-300x350.jpg" alt="Women Jeans">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Women-Blue-Skinny-Fit-Stretchable-Jeans-2-300x350.jpg" alt="Women Jeans">
+                                                        <img data-id="1" src="/Kapee/assets/img/Women-Blue-Skinny-Fit-Stretchable-Jeans-300x350.jpg" alt="Women Blue Jeans">
+                                                        <img class="hide-img" data-id="2" src="/Kapee/assets/img/Women-Blue-Skinny-Fit-Stretchable-Jeans-1-300x350.jpg" alt="Women Blue Jeans">
+                                                        <img class="hide-img" data-id="3" src="/Kapee/assets/img/Women-Blue-Skinny-Fit-Stretchable-Cropped-Jeans-1-300x350.jpg" alt="Women Blue Jeans">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Women-Blue-Skinny-Fit-Stretchable-Jeans-2-300x350.jpg" alt="Women Blue Jeans">
                                                     </a>
                                                  </div>
                                                  <div class="product-text">
@@ -1149,14 +1727,14 @@
                                                     </div>
                                                     <div class="product-variations">
                                                         <div class="product-colors">
-                                                            <span class="product-color active">
-                                                                <span class="bluer-color"></span>
+                                                            <span data-id="1" class="product-color active">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Blue" class="bluer-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="dark-bluer-color"></span>
+                                                            <span data-id="2" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Dark Blue" class="dark-bluer-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="sky-bluer-color"></span>
+                                                            <span data-id="3" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Sky Blue" class="sky-bluer-color"></span>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -1172,8 +1750,10 @@
                                                         </a>
                                                     </div>
                                                     <a href="#">
-                                                        <img src="/Kapee/assets/img/Brown-Quilted-Satchel-300x350.jpg" alt="Hand-Bag">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Brown-Quilted-Satchel-2-300x350.jpg" alt="Hand-Bag">
+                                                        <img data-id="2" src="/Kapee/assets/img/Brown-Quilted-Satchel-300x350.jpg" alt="Red-Hand-Bag">
+                                                        <img class="hide-img" data-id="1" src="/Kapee/assets/img/Purple-Textured-Satchel-1-300x350.jpg" alt="Purple-Hand-Bag">
+                                                        <img class="hide-img" data-id="3" src="/Kapee/assets/img/Beige-Quilted-Satchel-1-300x350.jpg" alt="Siver-Hand-Bag">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Brown-Quilted-Satchel-2-300x350.jpg" alt="Red-Hand-Bag">
                                                     </a>
                                                 </div>
                                                 <div class="product-text">
@@ -1211,14 +1791,14 @@
                                                     </div>
                                                     <div class="product-variations">
                                                         <div class="product-colors">
-                                                            <span class="product-color active">
-                                                                <span class="grey-color"></span>
+                                                            <span data-id="1" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Grey" class="grey-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="dark-red-color"></span>
+                                                            <span data-id="2" class="product-color active">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Maroon" class="dark-red-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="grey-silver-color"></span>
+                                                            <span data-id="3" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Silver" class="grey-silver-color"></span>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -1342,11 +1922,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="featured" role="tabpanel" aria-labelledby="profile-tab">
-                            <div class="row">
                                 <div class="owl-carousel owl-them">
                                     <div class="item">
                                         <div class="product-group">
@@ -1361,8 +1939,10 @@
                                                         </a>
                                                     </div>
                                                     <a href="#">
-                                                        <img src="/Kapee/assets/img/Solid-Men-Hooded-Blue-Grey-T-Shirt-300x350.jpg" alt="Men">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Solid-Men-Hooded-Blue-Grey-T-Shirt-2-300x350.jpg" alt="Men">
+                                                        <img data-id="1" src="/Kapee/assets/img/Solid-Men-Hooded-Blue-Grey-T-Shirt-300x350.jpg" alt="Men-Hooded-Blue-T-Shirt">
+                                                        <img data-id="2" class="hide-img" src="/Kapee/assets/img/Men-Hooded-Charcoal-Grey-T-Shirt-1-300x350.jpg" alt="Men-Hooded-Grey-T-Shirt">
+                                                        <img data-id="3" class="hide-img" src="/Kapee/assets/img/Men-Hooded-Colourblocked-Maroon-T-Shirt-1-300x350.jpg" alt="Men-Hooded-Red-T-Shirt">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Solid-Men-Hooded-Blue-Grey-T-Shirt-2-300x350.jpg" alt="Men-Hooded-Blue-Grey-T-Shirt">
                                                     </a>
                                                  </div>
                                                  <div class="product-text">
@@ -1404,14 +1984,14 @@
                                                     </div>
                                                     <div class="product-variations">
                                                         <div class="product-colors">
-                                                            <span class="product-color active">
-                                                                <span class="bluer-color"></span>
+                                                            <span data-id="1" class="product-color active">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Blue" class="bluer-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="grey-color"></span>
+                                                            <span data-id="2" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Grey" class="grey-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="dark-red-color"></span>
+                                                            <span data-id="3" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Maroon" class="dark-red-color"></span>
                                                             </span>
                                                         </div>
                                                         <div class="product-sizes">
@@ -1432,57 +2012,6 @@
                                         <div class="product-group">
                                             <div class="product-item">
                                                 <div class="product-img">
-                                                    <div class="product-button">
-                                                        <a id="wish-list" href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
-                                                            <i class="far fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                    <a href="#">
-                                                        <img src="/Kapee/assets/img/Navy-BlueSilver-White-Multifunction-Analog-Watch-300x350.jpg" alt="Watch">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Navy-BlueSilver-White-Multifunction-Analog-Watch-2-300x350.jpg" alt="Watch">
-                                                    </a>
-                                                </div>
-                                                <div class="product-text">
-                                                    <div class="product-title">
-                                                        <div class="product-category">
-                                                            <a href="#">Leather</a>
-                                                        </div>
-                                                        <h3 class="product-content">
-                                                            <a href="#">Navy Blue-Silver-White Multifunction Analog Watch</a>
-                                                        </h3>
-                                                        <div class="product-start">
-                                                            <div class="rating-wrap">
-                                                                <span>4 ★</span>
-                                                            </div>
-                                                            <div class="rating-counts">
-                                                                <a href="#"><span> (1) </span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <span class="price">
-                                                            <span>85.00</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="product-buttons">
-                                                        <div class="cart-button">
-                                                            <a href="#">Select options</a>
-                                                        </div>
-                                                        <div class="compare-button">
-                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
-                                                        </div>
-                                                        <div class="search-button">
-                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="product-group">
-                                            <div class="product-item">
-                                                <div class="product-img">
                                                     <div class="product-featured">
                                                         <span>Featured</span>
                                                     </div>
@@ -1492,8 +2021,10 @@
                                                         </a>
                                                     </div>
                                                     <a href="#">
-                                                        <img src="/Kapee/assets/img/Women-Off-White-Printed-Blouson-Top-300x350.jpg" alt="Women">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Women-Off-White-Printed-Blouson-Top-2-300x350.jpg" alt="Women">
+                                                        <img data-id="1" src="/Kapee/assets/img/Women-Off-White-Printed-Blouson-Top-300x350.jpg" alt="Women-Off-White-Printed-Blouson">
+                                                        <img class="hide-img" data-id="2" src="/Kapee/assets/img/Women-Blue-Printed-Blouson-Top-1-300x350.jpg" alt="Women-Off-White-Printed-Blouson">
+                                                        <img class="hide-img" data-id="3" src="/Kapee/assets/img/Women-Off-White-Printed-Top-1-300x350.jpg" alt="Women-Off-White-Printed-Blouson">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Women-Off-White-Printed-Blouson-Top-2-300x350.jpg" alt="Women-Off-White-Printed-Blouson">
                                                     </a>
                                                  </div>
                                                  <div class="product-text">
@@ -1531,16 +2062,560 @@
                                                     </div>
                                                     <div class="product-variations">
                                                         <div class="product-colors">
-                                                            <span class="product-color active">
-                                                                <span class="red-color"></span>
+                                                            <span data-id="1" class="product-color active">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Red" class="red-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="bluer-color"></span>
+                                                            <span data-id="2" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Sky Blue" class="bluer-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="white-color"></span>
+                                                            <span data-id="3" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="White" class="white-color"></span>
                                                             </span>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-featured">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="product-button">
+                                                        <a id="wish-list" href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img src="/Kapee/assets/img/Men-Blue-Skinny-Fit-Stretchable-Jeans-300x350.jpg" alt="Men Jeans">
+                                                        <img class="hover-image" src="/Kapee/assets/img/Men-Blue-Skinny-Fit-Stretchable-Jeans-2-300x350.jpg" alt="Men Jeans">
+                                                    </a>
+                                                </div>
+                                                <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Jeans</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Men Blue Skinny Fit Stretchable Jeans</a>
+                                                        </h3>
+                                                        <div class="product-start">
+                                                            <div class="rating-wrap yellow-star">
+                                                                <span>2 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (1) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$120.00</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-variations">
+                                                        <div class="product-sizes">
+                                                             <span class="product-size active">
+                                                                    <span>30</span>
+                                                                </span>
+                                                                <span class="product-size">
+                                                                    <span>32</span>
+                                                                </span>
+                                                                <span class="product-size">
+                                                                    <span>34</span>
+                                                                </span>
+                                                          </div>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-featured">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="product-button">
+                                                        <a id="wish-list" href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img src="/Kapee/assets/img/Women-Brown-Solid-Synthetic-Mid-Top-Flat-Boots-300x350.jpg" alt="Boots">
+                                                        <img class="hover-image" src="/Kapee/assets/img/Women-Brown-Solid-Synthetic-Mid-Top-Flat-Boots-2-300x350.jpg" alt="Boots">
+                                                    </a>
+                                                </div>
+                                                <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Sneakers</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Women Brown Solid Synthetic Mid Top Flat Boots</a>
+                                                        </h3>
+                                                        <div class="product-start">
+                                                            <div class="rating-wrap pink-star">
+                                                                <span>1 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (1) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>189.00</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-featured">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                   <div class="product-button">
+                                                        <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img src="/Kapee/assets/img/Women-Blue-Solid-Denim-Pencil-Skirt-300x350.jpg" alt="Women-Blue-Skirt">
+                                                        <img class="hover-image" src="/Kapee/assets/img/Women-Blue-Solid-Denim-Pencil-Skirt-2-300x350.jpg" alt="Women-Blue-Skirt">
+                                                    </a>
+                                                 </div>
+                                                 <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Jeans</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Women Blue Solid Denim Pencil Skirt</a>
+                                                        </h3>
+                                                        <div class="product-start">
+                                                            <div class="rating-wrap">
+                                                                <span>3.3 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (3) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$49.00</span>
+                                                            <span class="product-discount"> $89.00</span>
+                                                        </span>
+                                                        <span class="on-sale">
+                                                            <span>$45 % Off</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-featured">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="product-button">
+                                                        <a id="wish-list" href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img src="/Kapee/assets/img/Men-Black-Analogue-and-Digital-Watch-1-300x350.jpg" alt="Men-Watch">
+                                                        <img class="hover-image" src="/Kapee/assets/img/Men-Black-Analogue-and-Digital-Watch-2-300x350.jpg" alt="Men-Watch">
+                                                    </a>
+                                                </div>
+                                                <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Digital,Smart Analog</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Men Black Analogue and Digital Watch</a>
+                                                        </h3>
+                                                        <div class="product-start">
+                                                            <div class="rating-wrap">
+                                                                <span>4 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (2) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$199.00</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-featured">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="product-button">
+                                                        <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img data-id="1" src="/Kapee/assets/img/Women-Navy-Blue-Striped-Round-Neck-T-Shirt-300x350.jpg" alt="Women-Blue-T-Shirt">
+                                                        <img data-id="2" class="hide-img" src="/Kapee/assets/img/Women-Navy-Blue-Solid-Round-Neck-T-Shirt-1-300x350.jpg" alt="Women-Blue-T-Shirt">
+                                                        <img data-id="3" class="hide-img" src="/Kapee/assets/img/Women-Burgundy-Solid-Round-Neck-T-Shirt-1-300x350.jpg" alt="Women-Red-T-Shirt">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Women-Navy-Blue-Striped-Round-Neck-T-Shirt-3-300x350.jpg" alt="Women-Blue-T-Shirt">
+                                                    </a>
+                                                 </div>
+                                                 <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Shorts & Skirts</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Women Navy Blue Striped Round Neck T-Shirt</a>
+                                                        </h3>
+                                                        <div class="product-start">
+                                                            <div class="rating-wrap">
+                                                                <span>4 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (2) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$70.00 -</span>
+                                                            <span> $76.00</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-variations">
+                                                        <div class="product-colors">
+                                                            <span data-id="2" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Blue" class="bluer-color"></span>
+                                                            </span>
+                                                            <span data-id="1" class="product-color active">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Dark Blue" class="dark-bluer-color"></span>
+                                                            </span>
+                                                            <span data-id="3" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Red" class="red-color"></span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="product-sizes">
+                                                             <span class="product-size">
+                                                                    <span>L</span>
+                                                                </span>
+                                                                <span class="product-size active">
+                                                                    <span>M</span>
+                                                                </span>
+                                                                <span class="product-size">
+                                                                    <span>XL</span>
+                                                                </span>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-featured">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="product-button">
+                                                        <a id="wish-list" href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img src="/Kapee/assets/img/Men-Coffee-Brown-Genuine-Leather-Wallet-2-300x350.jpg" alt="Men-Coffee-Brown-Wallet">
+                                                        <img class="hover-image" src="/Kapee/assets/img/Men-Coffee-Brown-Genuine-Leather-Wallet-1-300x350.jpg" alt="Men-Coffee-Brown-Wallet">
+                                                    </a>
+                                                </div>
+                                                <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Wallets</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Men Coffee Brown Genuine Leather Wallet</a>
+                                                        </h3>
+                                                        <div class="product-start">
+                                                            <div class="rating-wrap">
+                                                                <span>4 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (1) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$40.00</span>
+                                                            <span class="product-discount"> $45.00</span>
+                                                        </span>
+                                                        <span class="on-sale">
+                                                            <span>11% Off</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-featured">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="product-button">
+                                                        <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img src="/Kapee/assets/img/Apple-AirPods-with-Wireless-Charging-300x350.jpg" alt="Apple-AirPods">
+                                                        <img class="hover-image" src="/Kapee/assets/img/Apple-AirPods-with-Wireless-Charging-2-300x350.jpg" alt="Apple-AirPods">
+                                                    </a>
+                                                 </div>
+                                                 <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Electronics</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Apple AirPods with Wireless Charging</a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$85.00</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-group">
+                                            <div class="product-item" style="margin-top: 30px;">
+                                                <div class="product-img">
+                                                    <div class="product-featured">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="product-button">
+                                                        <a id="wish-list" href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img src="/Kapee/assets/img/JBL-Wireless-Bluetooth-Speaker-300x350.jpg" alt="JBL-Bluetooth-Speaker">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/JBL-Wireless-Bluetooth-Speaker-2-300x350.jpg" alt="JBL-Bluetooth-Speaker">
+                                                    </a>
+                                                </div>
+                                                <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Electronics</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">JBL Wireless Bluetooth Speaker</a>
+                                                        </h3>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$96.00</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="tab-pane fade" id="on-sale" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="owl-carousel owl-them">
+                                    <div class="item">
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-featured">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                    <div class="product-button">
+                                                        <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img data-id="1" src="/Kapee/assets/img/Solid-Men-Hooded-Blue-Grey-T-Shirt-300x350.jpg" alt="Men-Hooded-Blue-T-Shirt">
+                                                        <img data-id="2" class="hide-img" src="/Kapee/assets/img/Men-Hooded-Charcoal-Grey-T-Shirt-1-300x350.jpg" alt="Men-Hooded-Grey-T-Shirt">
+                                                        <img data-id="3" class="hide-img" src="/Kapee/assets/img/Men-Hooded-Colourblocked-Maroon-T-Shirt-1-300x350.jpg" alt="Men-Hooded-Red-T-Shirt">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Solid-Men-Hooded-Blue-Grey-T-Shirt-2-300x350.jpg" alt="Men-Hooded-Blue-Grey-T-Shirt">
+                                                    </a>
+                                                 </div>
+                                                 <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">T-Shirts</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Men Hooded  Navy Blue & Grey T-Shirt</a>
+                                                        </h3>
+                                                        <div class="product-start">
+                                                            <div class="rating-wrap">
+                                                                <span>5 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (2) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$70.00 -</span>
+                                                            <span> $90.00</span>
+                                                        </span>
+                                                        <span class="on-sale">
+                                                            <span>19 % Off</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-variations">
+                                                        <div class="product-colors">
+                                                            <span data-id="1" class="product-color active">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Blue" class="bluer-color"></span>
+                                                            </span>
+                                                            <span data-id="2" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Grey" class="grey-color"></span>
+                                                            </span>
+                                                            <span data-id="3" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Maroon" class="dark-red-color"></span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="product-sizes">
+                                                             <span class="product-size active">
+                                                                    <span>L</span>
+                                                                </span>
+                                                                <span class="product-size">
+                                                                    <span>M</span>
+                                                                </span>
+                                                                <span class="product-size">
+                                                                    <span>S</span>
+                                                                </span>
+                                                          </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1554,8 +2629,9 @@
                                                         </a>
                                                     </div>
                                                     <a href="#">
-                                                        <img src="/Kapee/assets/img/Unisex-Blue-Graphic-Backpack-300x350.jpg" alt="Bag">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Unisex-Blue-Graphic-Backpack-2-430x502.jpg" alt="Bag">
+                                                        <img data-id="1" src="/Kapee/assets/img/Unisex-Blue-Graphic-Backpack-300x350.jpg" alt="Blue-Backpack">
+                                                        <img class="hide-img" data-id="2" src="/Kapee/assets/img/Unisex-Red-Orange-Brand-Logo-Backpack-1-430x502.jpg" alt="Red-Orange-Brand-Logo-Backpack">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Unisex-Blue-Graphic-Backpack-2-430x502.jpg" alt="Blue-Backpack">
                                                     </a>
                                                 </div>
                                                 <div class="product-text">
@@ -1597,11 +2673,11 @@
                                                     </div>
                                                     <div class="product-variations">
                                                         <div class="product-colors">
-                                                            <span class="product-color active">
-                                                                <span class="dark-bluer-color"></span>
+                                                            <span data-id="1" class="product-color active">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Dark Blue" class="dark-bluer-color"></span>
                                                             </span>
-                                                            <span class="product-color">
-                                                                <span class="red-color"></span>
+                                                            <span data-id="2" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Red" class="red-color"></span>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -1666,17 +2742,323 @@
                                         <div class="product-group">
                                             <div class="product-item">
                                                 <div class="product-img">
-                                                    <div class="product-featured">
-                                                        <span>Featured</span>
-                                                    </div>
                                                     <div class="product-button">
                                                         <a id="wish-list" href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
                                                             <i class="far fa-heart"></i>
                                                         </a>
                                                     </div>
                                                     <a href="#">
-                                                        <img src="/Kapee/assets/img/Men-Blue-Skinny-Fit-Stretchable-Jeans-300x350.jpg" alt="Men Jeans">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Men-Blue-Skinny-Fit-Stretchable-Jeans-2-300x350.jpg" alt="Men Jeans">
+                                                        <img src="/Kapee/assets/img/Women-Khaki-Solid-Top-300x350.jpg" alt="Women-Khaki">
+                                                        <img class="hover-image" src="/Kapee/assets/img/Women-Khaki-Solid-Top-2-300x350.jpg" alt="Women-Khaki">
+                                                    </a>
+                                                </div>
+                                                <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Tops</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Women Khaki Solid Top</a>
+                                                        </h3>
+                                                        <div class="product-start">
+                                                            <div class="rating-wrap">
+                                                                <span>4.5 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (2) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$129.00 -</span>
+                                                            <span> $199.00</span>
+                                                        </span>
+                                                        <span class="on-sale">
+                                                            <span>35 % Off</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-variations">
+                                                        <div class="product-sizes">
+                                                             <span class="product-size">
+                                                                    <span>L</span>
+                                                                </span>
+                                                                <span class="product-size">
+                                                                    <span>M</span>
+                                                                </span>
+                                                                <span class="product-size active">
+                                                                    <span>S</span>
+                                                                </span>
+                                                          </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-button">
+                                                        <a id="wish-list" href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img data-id="1" src="/Kapee/assets/img/Men-Black-Analogue-Watch-300x350.jpg" alt="Men-Black-Watch">
+                                                        <img class="hide-img" data-id="2" src="/Kapee/assets/img/Men-Silver-Toned-Analogue-Watch-1-300x350.jpg" alt="Men-Silver-Watch">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Men-Black-Analogue-Watch-2-300x350.jpg" alt="Men-Black-Watch">
+                                                    </a>
+                                                </div>
+                                                <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Analog</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Men Black Analogue Watch</a>
+                                                        </h3>
+                                                        <div class="product-start pink-star">
+                                                            <div class="rating-wrap pink-star">
+                                                                <span>1.5 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (2) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$1,099.00 -</span>
+                                                            <span> $1,299.00</span>
+                                                        </span>
+                                                        <span class="on-sale">
+                                                            <span>15 % Off</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-variations">
+                                                        <div class="product-colors">
+                                                            <span data-id="1" class="product-color active">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Black" class="black-color"></span>
+                                                            </span>
+                                                            <span data-id="2" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Red" class="grey-silver-color"></span>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-featured">
+                                                        <span>Featured</span>
+                                                    </div>
+                                                   <div class="product-button">
+                                                        <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img src="/Kapee/assets/img/Women-Blue-Solid-Denim-Pencil-Skirt-300x350.jpg" alt="Women-Blue-Skirt">
+                                                        <img class="hover-image" src="/Kapee/assets/img/Women-Blue-Solid-Denim-Pencil-Skirt-2-300x350.jpg" alt="Women-Blue-Skirt">
+                                                    </a>
+                                                 </div>
+                                                 <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Jeans</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Women Blue Solid Denim Pencil Skirt</a>
+                                                        </h3>
+                                                        <div class="product-start">
+                                                            <div class="rating-wrap">
+                                                                <span>3.3 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (3) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$49.00</span>
+                                                            <span class="product-discount"> $89.00</span>
+                                                        </span>
+                                                        <span class="on-sale">
+                                                            <span>$45 % Off</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                               </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-button">
+                                                        <a id="wish-list" href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img src="/Kapee/assets/img/Unisex-Rose-Gold-Smart-Watch-1-300x350.jpg" alt="Rose-Gold-Smart-Watch">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Unisex-Rose-Gold-Smart-Watch-2-300x350.jpg" alt="Rose-Gold-Smart-Watch">
+                                                    </a>
+                                                </div>
+                                                <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Smart Watches, Watches</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Unisex Rose Gold Smart Watch</a>
+                                                        </h3>
+                                                        <div class="product-start">
+                                                            <div class="rating-wrap">
+                                                                <span>4.5 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (2) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$449.00</span>
+                                                            <span class="product-discount"> $499.00</span>
+                                                        </span>
+                                                        <span class="on-sale">
+                                                            <span>10 % Off</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-button">
+                                                        <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img data-id="1" src="/Kapee/assets/img/Men-Aviator-Sunglasses-300x350.jpg" alt="Men-Sunglasses">
+                                                        <img data-id="2" class="hide-img" src="/Kapee/assets/img/Unisex-Aviator-Sunglasses-1-300x350.jpg" alt="Aviator-Sunglasses">
+                                                        <img class="hover-image hide-img" src="/Kapee/assets/img/Men-Aviator-Sunglasses-2-300x350.jpg" alt="Men-Sunglasses">
+                                                    </a>
+                                                 </div>
+                                                 <div class="product-text">
+                                                    <div class="product-title">
+                                                        <div class="product-category">
+                                                            <a href="#">Socks, Sunglasses</a>
+                                                        </div>
+                                                        <h3 class="product-content">
+                                                            <a href="#">Men Aviator Sunglasses</a>
+                                                        </h3>
+                                                        <div class="product-start">
+                                                            <div class="rating-wrap">
+                                                                <span>4 ★</span>
+                                                            </div>
+                                                            <div class="rating-counts">
+                                                                <a href="#"><span> (1) </span></a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-price">
+                                                        <span class="price">
+                                                            <span>$50.00 -</span>
+                                                            <span> $60.00</span>
+                                                        </span>
+                                                        <span class="on-sale">
+                                                            <span>17 % Off</span>
+                                                        </span>
+                                                    </div>
+                                                    <div class="product-buttons">
+                                                        <div class="cart-button">
+                                                            <a href="#">Select options</a>
+                                                        </div>
+                                                        <div class="compare-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
+                                                        </div>
+                                                        <div class="search-button">
+                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="product-variations">
+                                                        <div class="product-colors">
+                                                            <span data-id="2" class="product-color">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Black" class="black-color"></span>
+                                                            </span>
+                                                            <span data-id="1" class="product-color active">
+                                                                <span data-toggle="tooltip" data-placement="top" title="Maroon" class="dark-red-color"></span>
+                                                            </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="product-group">
+                                            <div class="product-item">
+                                                <div class="product-img">
+                                                    <div class="product-button">
+                                                        <a id="wish-list" href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
+                                                            <i class="far fa-heart"></i>
+                                                        </a>
+                                                    </div>
+                                                    <a href="#">
+                                                        <img src="/Kapee/assets/img/Light-Blue-Solid-Low-Rise-Skinny-Fit-Jeans-1-300x350.jpg" alt="Men-Light-Blue-Jeans">
+                                                        <img class="hover-image" src="/Kapee/assets/img/Light-Blue-Solid-Low-Rise-Skinny-Fit-Jeans-2-300x350.jpg" alt="Men-Light-Blue-Jeans">
                                                     </a>
                                                 </div>
                                                 <div class="product-text">
@@ -1685,7 +3067,7 @@
                                                             <a href="#">Jeans</a>
                                                         </div>
                                                         <h3 class="product-content">
-                                                            <a href="#">Men Blue Skinny Fit Stretchable Jeans</a>
+                                                            <a href="#">Light Blue Solid Low Rise Skinny Fit Jeans</a>
                                                         </h3>
                                                         <div class="product-start">
                                                             <div class="rating-wrap yellow-star">
@@ -1698,198 +3080,11 @@
                                                     </div>
                                                     <div class="product-price">
                                                         <span class="price">
-                                                            <span>$120.00</span>
+                                                            <span>$89.00 -</span>
+                                                            <span> $96.00</span>
                                                         </span>
-                                                    </div>
-                                                    <div class="product-buttons">
-                                                        <div class="cart-button">
-                                                            <a href="#">Select options</a>
-                                                        </div>
-                                                        <div class="compare-button">
-                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
-                                                        </div>
-                                                        <div class="search-button">
-                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-variations">
-                                                        <div class="product-counts">
-                                                             <span class="product-count active">
-                                                                    <span>30</span>
-                                                                </span>
-                                                                <span class="product-count">
-                                                                    <span>32</span>
-                                                                </span>
-                                                                <span class="product-count">
-                                                                    <span>34</span>
-                                                                </span>
-                                                          </div>
-                                                    </div>
-                                               </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="product-group">
-                                            <div class="product-item">
-                                                <div class="product-img">
-                                                    <div class="product-button">
-                                                        <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
-                                                            <i class="far fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                    <a href="#">
-                                                        <img src="/Kapee/assets/img/Women-Blue-Skinny-Fit-Stretchable-Jeans-300x350.jpg" alt="Women Jeans">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Women-Blue-Skinny-Fit-Stretchable-Jeans-2-300x350.jpg" alt="Women Jeans">
-                                                    </a>
-                                                 </div>
-                                                 <div class="product-text">
-                                                    <div class="product-title">
-                                                        <div class="product-category">
-                                                            <a href="#">Lingerie & Nightwear</a>
-                                                        </div>
-                                                        <h3 class="product-content">
-                                                            <a href="#">Women Blue Skinny Fit Stretchable Jeans</a>
-                                                        </h3>
-                                                        <div class="product-start">
-                                                            <div class="rating-wrap">
-                                                                <span>5 ★</span>
-                                                            </div>
-                                                            <div class="rating-counts">
-                                                                <a href="#"><span> (1) </span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <span class="price">
-                                                            <span>$70.00 -</span>
-                                                            <span> $78.00</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="product-buttons">
-                                                        <div class="cart-button">
-                                                            <a href="#">Select options</a>
-                                                        </div>
-                                                        <div class="compare-button">
-                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
-                                                        </div>
-                                                        <div class="search-button">
-                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-variations">
-                                                        <div class="product-colors">
-                                                            <span class="product-color active">
-                                                                <span class="bluer-color"></span>
-                                                            </span>
-                                                            <span class="product-color">
-                                                                <span class="dark-bluer-color"></span>
-                                                            </span>
-                                                            <span class="product-color">
-                                                                <span class="sky-bluer-color"></span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-group">
-                                            <div class="product-item">
-                                                <div class="product-img">
-                                                    <div class="product-button">
-                                                        <a id="wish-list" href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
-                                                            <i class="far fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                    <a href="#">
-                                                        <img src="/Kapee/assets/img/Brown-Quilted-Satchel-300x350.jpg" alt="Hand-Bag">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Brown-Quilted-Satchel-2-300x350.jpg" alt="Hand-Bag">
-                                                    </a>
-                                                </div>
-                                                <div class="product-text">
-                                                    <div class="product-title">
-                                                        <div class="product-category">
-                                                            <a href="#">Handbags</a>
-                                                        </div>
-                                                        <h3 class="product-content">
-                                                            <a href="#">Brown Quilted Satchel</a>
-                                                        </h3>
-                                                        <div class="product-start">
-                                                            <div class="rating-wrap pink-star">
-                                                                <span>1 ★</span>
-                                                            </div>
-                                                            <div class="rating-counts">
-                                                                <a href="#"><span> (1) </span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <span class="price">
-                                                            <span>$35.00</span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="product-buttons">
-                                                        <div class="cart-button">
-                                                            <a href="#">Select options</a>
-                                                        </div>
-                                                        <div class="compare-button">
-                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Compare"><i class="fas fa-random"></i></a>
-                                                        </div>
-                                                        <div class="search-button">
-                                                            <a href="#" data-toggle="tooltip" data-placement="top" title="Quick View"><i class="fas fa-search-plus"></i></a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-variations">
-                                                        <div class="product-colors">
-                                                            <span class="product-color active">
-                                                                <span class="grey-color"></span>
-                                                            </span>
-                                                            <span class="product-color">
-                                                                <span class="dark-red-color"></span>
-                                                            </span>
-                                                            <span class="product-color">
-                                                                <span class="grey-silver-color"></span>
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="product-group">
-                                            <div class="product-item">
-                                                <div class="product-img">
-                                                    <div class="product-button">
-                                                        <a href="#" data-toggle="tooltip" data-placement="left" title="Add to Wishlist">
-                                                            <i class="far fa-heart"></i>
-                                                        </a>
-                                                    </div>
-                                                    <a href="#">
-                                                        <img src="/Kapee/assets/img/Men-Navy-Red-Checked-Slim-Fit-Casual-Shirt-300x350.jpg" alt="Men Shirts">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Men-Navy-Red-Checked-Slim-Fit-Casual-Shirt-2-300x350.jpg" alt="Men Shirts">
-                                                    </a>
-                                                 </div>
-                                                 <div class="product-text">
-                                                    <div class="product-title">
-                                                        <div class="product-category">
-                                                            <a href="#">Shirts, Wallets</a>
-                                                        </div>
-                                                        <h3 class="product-content">
-                                                            <a href="#">Men Navy & Red Checked Slim Fit Casual Shirt</a>
-                                                        </h3>
-                                                        <div class="product-start">
-                                                            <div class="rating-wrap">
-                                                                <span>3.5 ★</span>
-                                                            </div>
-                                                            <div class="rating-counts">
-                                                                <a href="#"><span> (2) </span></a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="product-price">
-                                                        <span class="price">
-                                                            <span>$124.00</span>
+                                                        <span class="on-sale">
+                                                            <span>7 % Off</span>
                                                         </span>
                                                     </div>
                                                     <div class="product-buttons">
@@ -1906,17 +3101,17 @@
                                                     <div class="product-variations">
                                                         <div class="product-sizes">
                                                              <span class="product-size active">
-                                                                    <span>L</span>
+                                                                    <span>30</span>
                                                                 </span>
                                                                 <span class="product-size">
-                                                                    <span>M</span>
+                                                                    <span>32</span>
                                                                 </span>
                                                                 <span class="product-size">
-                                                                    <span>XL</span>
+                                                                    <span>34</span>
                                                                 </span>
                                                           </div>
                                                     </div>
-                                                </div>
+                                               </div>
                                             </div>
                                         </div>
                                         <div class="product-group">
@@ -1931,21 +3126,21 @@
                                                         </a>
                                                     </div>
                                                     <a href="#">
-                                                        <img src="/Kapee/assets/img/Women-Brown-Solid-Synthetic-Mid-Top-Flat-Boots-300x350.jpg" alt="Boots">
-                                                        <img class="hover-image" src="/Kapee/assets/img/Women-Brown-Solid-Synthetic-Mid-Top-Flat-Boots-2-300x350.jpg" alt="Boots">
+                                                        <img src="/Kapee/assets/img/Men-Coffee-Brown-Genuine-Leather-Wallet-2-300x350.jpg" alt="Men-Coffee-Brown-Wallet">
+                                                        <img class="hover-image" src="/Kapee/assets/img/Men-Coffee-Brown-Genuine-Leather-Wallet-1-300x350.jpg" alt="Men-Coffee-Brown-Wallet">
                                                     </a>
                                                 </div>
                                                 <div class="product-text">
                                                     <div class="product-title">
                                                         <div class="product-category">
-                                                            <a href="#">Sneakers</a>
+                                                            <a href="#">Wallets</a>
                                                         </div>
                                                         <h3 class="product-content">
-                                                            <a href="#">Women Brown Solid Synthetic Mid Top Flat Boots</a>
+                                                            <a href="#">Men Coffee Brown Genuine Leather Wallet</a>
                                                         </h3>
                                                         <div class="product-start">
-                                                            <div class="rating-wrap pink-star">
-                                                                <span>1 ★</span>
+                                                            <div class="rating-wrap">
+                                                                <span>4 ★</span>
                                                             </div>
                                                             <div class="rating-counts">
                                                                 <a href="#"><span> (1) </span></a>
@@ -1954,7 +3149,11 @@
                                                     </div>
                                                     <div class="product-price">
                                                         <span class="price">
-                                                            <span>189.00</span>
+                                                            <span>$40.00</span>
+                                                            <span class="product-discount"> $45.00</span>
+                                                        </span>
+                                                        <span class="on-sale">
+                                                            <span>11% Off</span>
                                                         </span>
                                                     </div>
                                                     <div class="product-buttons">
@@ -1973,11 +3172,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="on-sale" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                            </div> 
                       </div>
                 </div>
+              </div>
             </div>
         </section>
          
@@ -2253,7 +3451,7 @@
         <section id="info">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-3">
                         <div class="info-content">
                           <div class="info-icon">
                             <i class="fas fa-truck"></i>
@@ -2268,7 +3466,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-3">
                         <div class="info-content">
                           <div class="info-icon">
                             <i class="fas fa-sync-alt"></i>
@@ -2283,7 +3481,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-3">
                         <div class="info-content">
                           <div class="info-icon">
                             <i class="far fa-credit-card"></i>
@@ -2298,7 +3496,7 @@
                           </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-3">
                         <div class="info-content">
                           <div class="info-icon">
                             <i class="far fa-comment"></i>
@@ -2742,7 +3940,7 @@
         <section id="footer-main">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-3">
                         <div class="footer-kape">
                             <p class="footer-logo">
                                 <a href="#">
@@ -2772,7 +3970,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-6">
+                    <div class="col-lg-2 col-md-6 mb-3">
                         <div class="footer-info-content">
                             <h2>Information</h2>
                             <div class="footer-info-text">
@@ -2799,7 +3997,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-6">
+                    <div class="col-lg-2 col-md-6 mb-3">
                         <div class="footer-service-content">
                             <h2>Our Service</h2>
                             <div class="footer-service-text">
@@ -2826,7 +4024,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2 col-md-6">
+                    <div class="col-lg-2 col-md-6 mb-3">
                         <div class="footer-account-content">
                             <h2>My Account</h2>
                             <div class="footer-account-text">
@@ -2853,7 +4051,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-3">
                         <div class="footer-news">
                             <h2>Newsletter</h2>
                             <div class="footer-news-letter">
@@ -2922,10 +4120,19 @@
         </section>
     </footer>
 
+
+    <!-- Bact to top start -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="/Kapee/assets/js/main.js"></script>
 </body>
 

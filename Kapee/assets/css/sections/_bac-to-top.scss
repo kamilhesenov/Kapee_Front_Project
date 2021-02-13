@@ -1,0 +1,33 @@
+// back-to-top start
+.back-to-top{
+    text-decoration: none;
+    background-color: $main-color;
+    color: #fff;
+    font-size: 0;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    z-index: 998;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-1000px);
+    position: fixed;
+    @include transition(all 2s);
+    &.show{
+        transform: translateY(0);
+        opacity: 1;
+        overflow: visible;
+        @include transition(all 2s ease-out);
+    }
+   &:hover{
+    color: #fff; 
+    @include transition(all 2s);
+    }
+    i{
+        font-size: 20px;
+        line-height: 40px;
+    }
+}

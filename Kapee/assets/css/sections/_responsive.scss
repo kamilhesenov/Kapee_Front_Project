@@ -1,0 +1,326 @@
+// Responsive for Ipad
+@media (max-width: 991.98px) {
+    #header-top {
+        display: none;
+    }
+
+    #header-serch {
+        background-color: $main-color !important;
+        height: 120px;
+        align-items: flex-start !important;
+        .search {
+            position: relative;
+            top: 60px;
+            left: -10.5rem;
+            z-index: 999;
+            width: 600px;
+            &.onscrol{
+                top: 13px;
+                left: -8.5rem;
+                width: 500px;
+            }
+        }
+        .logo{
+            display: none !important;
+        }
+        .logo-mobil{
+            display: block !important;
+        }
+        .header-account-heart-cart {
+            margin-left: 0px !important;
+            &.show{
+                right: 20px !important;  
+            }
+            i{
+                color: white !important;
+            }
+            small{
+                color: #fff;
+            }
+            .header-account {
+                .my-account {
+                    display: none !important;
+                }
+            }
+            .header-heart {
+                position: relative;
+                margin-left: 10px !important;
+                top: 2px;
+                span{
+                    right: -10px !important;
+                    top: -10px !important;
+                    background-color: #fff !important;
+                    color: $main-color !important;
+                }
+            }
+            .header-cart{
+                position: relative;
+                top: 3px;
+                right: 10px;
+                span{
+                    color: #fff;
+                }
+                a{
+                   .cart-icon{
+                      span{
+                          background-color: #fff !important;
+                          color: $main-color !important;
+                          top: -11px;
+                      } 
+                   } 
+                }
+            }
+        }
+    }
+
+    #header-page {
+        display: none;
+    }
+
+    #fashion {
+        .slider{
+            .bg-img{
+                height: 350px !important;
+                .title{
+                    &.text-style-right{
+                        margin-top: 2% !important;
+                        margin-left: 35% !important;
+                        h1{
+                            font-size: 25px !important;
+                        }
+                        p{
+                            font-size: 23px !important;
+                            span{
+                                font-size: 60px !important; 
+                            }
+                        }
+                    }
+                    &.text-style-left{
+                        h1{
+                            font-size: 25px !important;
+                        }
+                        p{
+                            font-size: 30px !important;
+                            span{
+                                font-size: 45px !important;
+                            }
+                        }  
+                    }
+                }
+            }
+            .owl-nav{
+                .owl-next{
+                    top: 215px !important;
+                }
+                .owl-prev{
+                    top: 215px !important;
+                } 
+            }
+        }
+    }
+
+    #category-sliders{
+      .category-slider-content{
+        .item{
+           a{
+             .category-slider-img{
+                margin-left: 17px;
+              } 
+           } 
+        }  
+      }
+      .category-corusel{
+          display: block !important;
+      }  
+    }    
+
+}
+
+// Responsive for IPhone
+@media(max-width: 767.98px){
+    #header-serch{
+       .logo-mobil{
+          img{
+            height: 40px !important;
+          }
+       }
+       .header-account-heart-cart{
+           position: absolute;
+           top: 20px;
+           right: 5px;
+           .header-cart{
+              .cart-content{
+                  display: none;
+              } 
+           }
+       } 
+       .search-product-icon{
+        margin-left: 50px !important;
+       }
+       .search{
+        width: 246px !important;
+        top: -4.5px !important;
+        left: 0px !important;
+        form{
+            .select-search{
+                width: 100px !important;
+            }
+        }
+       }
+       .mobile-navbar{
+           a{
+               top: 28px !important;
+               i{
+                   font-size: 20px !important;
+                   z-index: 999;
+               }
+           }
+       }
+    }
+    #fashion{
+      .slider{
+        .bg-img{
+            height: 200px !important;
+            .title{
+                &.text-style-right{
+                        margin-top: 5% !important;
+                        margin-left: 35% !important;
+                    h1{
+                        font-size: 10px !important;
+                      }
+                      p{
+                        font-size: 11px !important;
+                         span{
+                            font-size: 30px !important;
+                         } 
+                      }
+                      a{
+                         font-size: 8px !important;
+                         padding: 4px 7px 4px 7px !important;
+                      }
+                }
+             
+              &.text-style-left{
+                margin-top: 5% !important;
+                margin-right: 35% !important;
+                h1{
+                    font-size: 10px !important;
+                  }
+                  p{
+                    font-size: 15px !important;
+                     span{
+                        font-size: 30px !important;
+                     } 
+                  } 
+                  a{
+                    font-size: 8px !important;
+                    padding: 4px 7px 4px 7px !important;
+                }
+             }   
+            }
+        }
+        .owl-nav{
+            .owl-next{
+                top: 90px !important;
+                right: 8px !important;
+            }
+            .owl-prev{
+                top: 90px !important;
+                left: 8px !important;
+            } 
+        }
+        .owl-dots{
+            display: none;
+            opacity: 0;
+        } 
+      }  
+    }
+    #category-sliders{
+        .item{
+         a{
+             .category-slider-img{
+                margin-left: 35px !important;
+             }
+            .category-slider-text{
+                margin-top: 5px !important;
+            }
+         }
+        }
+        .owl-nav{
+            .owl-next{
+                top: 0px !important;
+                right: 0px !important;
+            }
+            .owl-prev{
+                top: 0px !important;
+                left: 0px !important;
+            } 
+        }  
+    }
+    #products{
+      .slider{
+        .owl-nav{
+            .owl-next{
+                top: 230px !important;
+                right: -8px !important;
+            }
+            .owl-prev{
+                top: 230px !important;
+                left: 8px !important;
+            } 
+        }  
+      }
+    }
+    #category{
+        .fashion-categories{
+          .fashion-category{
+            .category-content{
+                .item{
+                  .category-product{
+                     a{
+                         h3{
+                             padding: 0px !important;
+                             font-size: 10px !important;
+                         }
+                     } 
+                  }  
+                }
+            }  
+          }  
+        }  
+    }
+    #customer{
+        .owl-nav{
+            .owl-next{
+                top: 230px !important;
+                right: -8px !important;
+            }
+            .owl-prev{
+                top: 230px !important;
+                left: 8px !important;
+            } 
+        } 
+    }
+    #info{
+      .info-content{
+          margin-top: 50px !important;
+      }  
+    }
+    #brand{
+      .item{
+        width: 120px !important;
+        padding-right: 18px !important;
+           
+      }
+      .owl-nav{
+        .owl-next{
+            top: -20px !important;
+            right: -80px !important;
+        }
+        .owl-prev{
+            top: -20px !important;
+            left: -80px !important;
+        } 
+      } 
+    }
+}

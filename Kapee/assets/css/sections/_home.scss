@@ -16,43 +16,33 @@
             @include transition(all 0.5s ease 0s);
         }
         .item {
-            .subtitle {
-                float: right !important;
-                margin-left: 30% !important;
-                .title-content {
-                    color: $main-color;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    font-family: Arial, Helvetica, sans-serif;
-                }
-                p {
-                    font-size: 20px !important;
-                    padding: 0 170px !important;
-                    color: #333333 !important;
-                    span {
-                        font-size: 70px !important;
-                        color: black !important;
-                        font-family: $secondary_font_family !important;
-                    }
-                }
-            }
             .title {
                 text-align: center;
                 color: #333333;
                 text-transform: uppercase;
                 float: left;
-                margin-top: 10%;
-                margin-left: 10%;
+                &.text-style-left{
+                    margin-top: 8%;
+                    margin-left: 5%;
+                }
+                &.text-style-right{
+                    margin-top: 8%;
+                    margin-left: 40%;
+                    p{
+                        font-weight: 400 !important;
+                    }
+                }
                 h1 {
+                    font-size: 30px;
                     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-                    font-size: 20px;
+                    text-transform: uppercase;
                 }
                 p {
+                    font-size: 36px;
                     display: block;
-                    font-size: 40px;
-                    font-weight: 700;
+                    font-weight: 600;
                     span {
-                        font-size: 100px;
+                        font-size: 80px;
                         display: block;
                         font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
                         font-weight: bolder;
@@ -84,19 +74,6 @@
                 border-radius: 3px;
                 height: 80vh;
                 width: 100%;
-            }
-            .subfashion {
-                h1 {
-                    font-size: 50px !important;
-                    font-family: $primary_font_family !important;
-                    font-weight: 400 !important;
-                }
-                p {
-                    font-size: 50px !important;
-                    span {
-                        font-size: 70px !important;
-                    }
-                }
             }
         }
         .owl-nav {
@@ -149,23 +126,85 @@
                 }
             }
         }
+        .owl-dots{
+            position: absolute;
+            bottom: 20px;
+            left: 45%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 55px;
+            padding-top: 15px;
+            .owl-dot{
+                margin: 0 1px;
+                justify-content: center;
+                align-items: center;
+                @include transition(all 0.5s ease-out);
+                &.active span{
+                    position: relative;
+                    box-shadow: 0 0 10px #ffffff;
+                    color: #ffffff;
+                    border: 2px solid #ffffff;
+                    @include transition( all 0.5s ease-out);
+                    &::after{
+                      content: '';
+                      position: absolute;
+                      box-shadow: 0 0 10px #ffffff;
+                      background-color: #ffffff;
+                      color: #ffffff;
+                      height: 6px;
+                      width: 6px;
+                      left: 3px;
+                      top: 2px;
+                      line-height: 10px;
+                      border-radius: 50%;
+                    }
+                }
+                &:focus{
+                    display: none;
+                }
+                span{
+                    margin: 0 5px;
+                    height: 16px;
+                    width: 16px;
+                    display: block;
+                    border-radius: 50%;
+                    background: transparent;
+                    border: 2px solid #F8F8F8;
+                    text-align: center;
+                    @include transition(all 0.5s ease-out);
+                    &:hover{
+                        border: 2px solid #ffffff;
+                        @include transition(all 0.5s ease-out);
+                    }
+                    
+                }
+            }
+        }
     }
 }
 
 // Category Slider start
-#category-slider{
+#category-sliders{
     margin-top: 80px;
     margin-bottom: 50px;
+    .category-corusel{
+        display: none;
+    }
    .category-slider-content{
     @include transition(all 0.5s ease 0s);
        &:hover .owl-nav .owl-next{
            opacity: 1;
            visibility: visible;
+           animation-name: fadeInRightBig;
+           animation-duration: 0.5s;
            @include transition(all 0.5s ease 0s);
        }
        &:hover .owl-nav .owl-prev{
         opacity: 1;
         visibility: visible;
+        animation-name: fadeInLeftBig;
+        animation-duration: 0.5s;
         @include transition(all 0.5s ease 0s);
     }
       .item{
@@ -271,16 +310,9 @@
     background-color: #fff;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 100%;
+    
     .slider {
-        display: flex;
-        flex-wrap: wrap;
-        box-sizing: border-box;
-        height: 247px;
-        width: 1200px;
         .item {
-            width: 370px;
-            margin-right: 30px;
             @include transition(all 0.5s ease-out);
             &:hover .collection-img img {
                 transform: scale(1.1);
@@ -353,7 +385,7 @@
     margin-bottom: 50px;
     margin-top: 50px;
     .slider {
-        .nav-tabs {
+       .nav-tabs {
             border: 0 !important;
             .nav-item {
                 margin-right: 2em;
@@ -422,12 +454,26 @@
             .tab-pane {
                 height: auto;
                 overflow: visible;
+                @include transition(all 0.5s ease-out);
+                &:hover .owl-nav .owl-next {
+                    opacity: 1;
+                    visibility: visible;
+                    animation-name: fadeInRightBig;
+                    animation-duration: 0.5s;
+                    @include transition(all 0.5s ease-out);
+                }
+                &:hover .owl-nav .owl-prev {
+                    opacity: 1;
+                    visibility: visible;
+                    animation-name: fadeInLeftBig;
+                    animation-duration: 0.5s;
+                    @include transition(all 0.5s ease-out);
+                }
                 .item {
                     .product-group {
                         .product-item {
                             transition: box-shadow 0.3s ease-in-out;
-                            padding: 15px;
-                            padding-bottom: 30px;
+                            padding: 15px 15px 30px 15px;
                             position: relative;
                             @include transition(all 0.5s ease-out);
                             &:hover {
@@ -450,7 +496,6 @@
                                 @include transition(all 0.5s ease-out);
                              }
                             .product-img {
-                                margin-bottom: 8px;
                                 position: relative;
                                 @include transition(all 0.5s ease-out);
                                 &:hover .hover-image {
@@ -504,8 +549,6 @@
                                     color: #333;
                                     text-decoration: none;
                                     img {
-                                        height: auto;
-                                        border-style: none;
                                         max-width: 100%;
                                     }
                                     .hover-image {
@@ -553,6 +596,12 @@
                                             color: #333;
                                             text-decoration: none;
                                             @include transition(all 0.5s ease-out);
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                            display:block;
+                                            width:100%;
+                                            min-width:1px;
                                         }
                                     }
                                     .product-start {
@@ -708,8 +757,6 @@
                                     right: -15px;
                                     box-shadow: 0 8px 8px 0 #cccccc;
                                     display: none;
-                                    // opacity: 0;
-                                    // visibility: hidden;
                                     z-index: 91;
                                     @include transition(all 0.5s ease-out);
                                     .product-colors {
@@ -849,6 +896,21 @@
                                                 display: inline-block;
                                                 cursor: pointer;
                                             }
+                                            .black-color{
+                                                background-color: #333333;
+                                                border-radius: 50%;
+                                                width: 18px;
+                                                height: 18px;
+                                                line-height: 18px;
+                                                border-top-width: 1px;
+                                                border-bottom-width: 1px;
+                                                border-left-width: 1px;
+                                                border-right-width: 1px;
+                                                border-style: solid;
+                                                border-color: #e9e9e9;
+                                                display: inline-block;
+                                                cursor: pointer;
+                                            }
                                         }
                                     }
                                     .product-sizes {
@@ -880,37 +942,63 @@
                                             }
                                         }
                                     }
-                                    .product-counts{
-                                        margin-bottom: 5px;
-                                        display: flex;
-                                        flex-direction: row;
-                                        flex-wrap: wrap;
-                                        align-items: center;
-                                        .product-count{
-                                            display: inline-flex;
-                                            border-radius: 50%;
-                                            margin-right: 2px;
-                                            margin-bottom: 2px;
-                                            margin-top: 2px;
-                                            padding: 2px;
-                                            text-align: center;
-                                            &.active {
-                                                border: 2px solid $main-color;
-                                            }
-                                            span{
-                                                border-radius: 50%;
-                                                width: 18px;
-                                                height: 18px;
-                                                font-size: 15px;
-                                                line-height: 18px;
-                                                color: #333;
-                                                display: inline-block;
-                                                cursor: pointer;
-                                            }
-                                        }
-                                    }
                                 }
                             }
+                        }
+                    }
+                }
+                .owl-nav {
+                    .owl-next {
+                        position: absolute;
+                        top: 400px;
+                        right: 0;
+                        background-color: #fff;
+                        box-shadow: 0 0 10px #cccccc;
+                        width: 40px;
+                        height: 70px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        font-size: 30px;
+                        color: #333333;
+                        @include transition(all 0.5s);
+                        z-index: 1;
+                        opacity: 0;
+                        visibility: hidden;
+                        &:hover {
+                            background-color: $main-color;
+                            color: #ffffff;
+                            @include transition(all 0.5s);
+                        }
+                        &:focus {
+                            display: none;
+                        }
+                    }
+                    .owl-prev {
+                        position: absolute;
+                        top: 400px;
+                        left: 0;
+                        background-color: #fff;
+                        box-shadow: 0 0 10px #cccccc;
+                        width: 40px;
+                        height: 70px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #333333;
+                        @include transition(all 0.5s);
+                        font-size: 30px;
+                        z-index: 1;
+                        opacity: 0;
+                        visibility: hidden;
+                        &:hover {
+                            background-color: $main-color;
+                            color: #ffffff;
+                            @include transition(all 0.5s);
+                        }
+                        &:focus {
+                            display: none;
                         }
                     }
                 }
@@ -976,11 +1064,15 @@
                 &:hover .owl-nav .owl-next {
                     opacity: 1;
                     visibility: visible;
+                    animation-name: fadeInRightBig;
+                    animation-duration: 0.5s;
                     @include transition(all 0.5s ease-out);
                 }
                 &:hover .owl-nav .owl-prev {
                     opacity: 1;
                     visibility: visible;
+                    animation-name: fadeInLeftBig;
+                    animation-duration: 0.5s;
                     @include transition(all 0.5s ease-out);
                 }
                 .item {
@@ -1147,16 +1239,18 @@
                 &:hover .owl-nav .owl-next {
                     opacity: 1;
                     visibility: visible;
+                    animation-name: fadeInRightBig;
+                    animation-duration: 0.5s;
                     @include transition(all 0.5s ease-out);
                 }
                 &:hover .owl-nav .owl-prev {
                     opacity: 1;
                     visibility: visible;
+                    animation-name: fadeInLeftBig;
+                    animation-duration: 0.5s;
                     @include transition(all 0.5s ease-out);
                 }
                 .item {
-                    width: 1170px;
-                    margin-right: 30px;
                     .testimonial {
                         text-align: center;
                         .testimonial-content {
@@ -1165,7 +1259,6 @@
                                 font-weight: 400;
                                 font-style: normal;
                                 font-family: $main_font_family;
-                                margin-left: 15%;
                                 i {
                                     color: #fff;
                                     margin-right: 0.5em;
@@ -1175,7 +1268,6 @@
                                 }
                             }
                             .testimonial-img {
-                                margin-left: 15%;
                                 display: inline-block;
                                 margin-top: 1.5em;
                                 margin-bottom: 1em;
@@ -1188,7 +1280,6 @@
                                 }
                             }
                             .testimonial-description {
-                                margin-left: 15%;
                                 margin-top: 1em;
                                 .testimonial-name {
                                     font-size: 13px;
@@ -1274,7 +1365,6 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    padding-left: 55px;
                     padding-top: 15px;
                     .owl-dot{
                         margin: 0 1px;
@@ -1397,11 +1487,15 @@
         &:hover .owl-nav .owl-next {
             opacity: 1;
             visibility: visible;
+            animation-name: fadeInRightBig;
+            animation-duration: 0.5s;
             @include transition(all 0.5s ease-out);
         }
         &:hover .owl-nav .owl-prev {
             opacity: 1;
             visibility: visible;
+            animation-name: fadeInLeftBig;
+            animation-duration: 0.5s;
             @include transition(all 0.5s ease-out);
         }
         .item {
@@ -1605,7 +1699,6 @@
 #brand {
     position: relative;
     box-sizing: border-box;
-    width: 1349px;
     padding-left: 74.5px;
     padding-right: 74.5px;
     margin-top: 50px;
@@ -1614,11 +1707,15 @@
     &:hover .owl-nav .owl-next {
         opacity: 1;
         visibility: visible;
+        animation-name: fadeInRightBig;
+        animation-duration: 0.5s;
         @include transition(all 0.5s ease-out);
     }
     &:hover .owl-nav .owl-prev {
         opacity: 1;
         visibility: visible;
+        animation-name: fadeInLeftBig;
+        animation-duration: 0.5s;
         @include transition(all 0.5s ease-out);
     }
     .item {
@@ -1711,3 +1808,4 @@
         bottom: 8px;
     }
 }
+

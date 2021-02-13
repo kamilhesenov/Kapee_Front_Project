@@ -3,10 +3,13 @@
 @import "common/font";
 @import "common/mixins";
 @import "common/reset";
+@import "common/animated";
 
 
 
 // sections files
 @import "sections/header";
 @import "sections/footer";
+@import "sections/bac-to-top";
+@import "sections/responsive";
 @import "sections/home";
