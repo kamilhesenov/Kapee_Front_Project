@@ -164,9 +164,7 @@ $(document).ready(function () {
             }
         })
     }
-    $( ".slider .owl-carousel .owl-prev").html('<i class="fas fa-angle-left"></i>');
-    $( ".slider .owl-carousel .owl-next").html('<i class="fas fa-angle-right"></i>');
-
+    
 
     // Brand corusel start
     if ($("#brand").length) {
@@ -176,7 +174,6 @@ $(document).ready(function () {
             loop: false,
             nav: true,
             mouseDrag: true,
-            autoplay: false,
             responsive: {
                 0: {
                     items: 2
@@ -190,9 +187,7 @@ $(document).ready(function () {
             }
         })
     }
-    $( ".slider .owl-carousel .owl-prev").html('<i class="fas fa-angle-left"></i>');
-    $( ".slider .owl-carousel .owl-next").html('<i class="fas fa-angle-right"></i>');
-
+    
 
     //  Header Scroll start 
     if($("#header-serch").length){
@@ -374,6 +369,91 @@ $(document).ready(function () {
     console.log($(".mobile-category-menu").attr("data-id") == $(this).attr("data-id"));
  })
 
+ //  Product Detail start
+ $(".product-sync-init").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: false,
+    draggable: false,
+    arrows: false,
+    dots: false,
+    fade: true,
+    asNavFor: ".product-sync-nav",
+ });
+ $(".product-sync-nav").slick({
+    dots: false,
+    arrows: true,
+    infinite: false,
+    prevArrow: '<button class="next slick-prev"><i class="fas fa-angle-left"></i></button>',
+    nextArrow: '<button class="prev slick-next"><i class="fas fa-angle-right"></i></button>',
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: ".product-sync-init",
+    focusOnSelect: true,
+    draggable: false,
+  });
+
+  // product color change
+  $(".product-color").click(function(){
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+    console.log($(this).parents().parents().parent().find(".product-sync-init .single-product .product-thumb img"));
+    $(this).parents().parents().parent().find(`.product-sync-init .single-product .product-thumb img[data-id=${$(this).attr("data-id")}]`).removeClass("hide-img");
+    $(this).parents().parents().parent().find(`.product-sync-init .single-product .product-thumb img[data-id=${$(this).attr("data-id")}]`).siblings().addClass("hide-img");
+    $(this).parents().parents().parent().find(`.product-sync-nav .single-product .product-thumb img[data-id=${$(this).attr("data-id")}]`).removeClass("hide-img");
+    $(this).parents().parents().parent().find(`.product-sync-nav .single-product .product-thumb img[data-id=${$(this).attr("data-id")}]`).siblings().addClass("hide-img");
+  })
+
+  // product size change
+  $(".product-size").click(function(){
+      console.log($(this).parents().next().find(".price"));
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+    $(this).parents().next().find(`.price[data-id = ${$(this).attr("data-id")}]`).removeClass("hide-size");
+    $(this).parents().next().find(`.price[data-id = ${$(this).attr("data-id")}]`).siblings().addClass("hide-size");
+})
+
+  // Products corusel start
+  if ($("#releted-product").length) {
+    $('#releted-product .owl-carousel').owlCarousel({
+        dots: false,
+        loop: true,
+        nav: true,
+        mouseDrag: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+}
+
+
+  // related product color change
+  $(".product-color").click(function(){
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+    console.log($(this).attr("data-id"));
+    $(this).parents(".product-group").find(`.product-img a img[data-id=${$(this).attr("data-id")}]`).removeClass("hide-img");
+    $(this).parents(".product-group").find(`.product-img a img[data-id=${$(this).attr("data-id")}]`).siblings().addClass("hide-img");
+})
+
+// related product size change
+$(".product-size").click(function(){
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+})
+ 
 })
 
 

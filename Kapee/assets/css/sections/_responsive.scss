@@ -8,6 +8,9 @@
         background-color: $main-color !important;
         height: 120px;
         align-items: flex-start !important;
+        .mobile-navbar{
+            display: block;
+        }
         .search {
             position: relative;
             top: 60px;
@@ -290,6 +293,9 @@
         }  
     }
     #customer{
+        .testimonial-detail{
+            width: 100% !important;
+        }
         .owl-nav{
             .owl-next{
                 top: 230px !important;

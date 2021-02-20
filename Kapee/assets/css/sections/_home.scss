@@ -84,17 +84,18 @@
                 background-color: #fff;
                 width: 45px;
                 height: 45px;
+                line-height: 45px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                font-size: 15px;
+                font-size: 30px;
                 color: #333333;
                 @include transition(all 0.5s);
                 z-index: 1;
                 opacity: 0;
                 visibility: hidden;
                 &:hover {
-                    font-size: 25px;
+                    font-size: 40px;
                     @include transition(all 0.5s);
                 }
                 &:focus {
@@ -108,17 +109,18 @@
                 background-color: #fff;
                 width: 45px;
                 height: 45px;
+                line-height: 45px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 color: #000000;
                 @include transition(all 0.5s);
-                font-size: 15px;
+                font-size: 30px;
                 z-index: 1;
                 opacity: 0;
                 visibility: hidden;
                 &:hover {
-                    font-size: 25px;
+                    font-size: 40px;
                     @include transition(all 0.5s);
                 }
                 &:focus {
@@ -196,15 +198,11 @@
        &:hover .owl-nav .owl-next{
            opacity: 1;
            visibility: visible;
-           animation-name: fadeInRightBig;
-           animation-duration: 0.5s;
            @include transition(all 0.5s ease 0s);
        }
        &:hover .owl-nav .owl-prev{
         opacity: 1;
         visibility: visible;
-        animation-name: fadeInLeftBig;
-        animation-duration: 0.5s;
         @include transition(all 0.5s ease 0s);
     }
       .item{
@@ -458,15 +456,11 @@
                 &:hover .owl-nav .owl-next {
                     opacity: 1;
                     visibility: visible;
-                    animation-name: fadeInRightBig;
-                    animation-duration: 0.5s;
                     @include transition(all 0.5s ease-out);
                 }
                 &:hover .owl-nav .owl-prev {
                     opacity: 1;
                     visibility: visible;
-                    animation-name: fadeInLeftBig;
-                    animation-duration: 0.5s;
                     @include transition(all 0.5s ease-out);
                 }
                 .item {
@@ -960,7 +954,7 @@
                         justify-content: center;
                         align-items: center;
                         text-align: center;
-                        font-size: 30px;
+                        font-size: 50px;
                         color: #333333;
                         @include transition(all 0.5s);
                         z-index: 1;
@@ -988,7 +982,7 @@
                         align-items: center;
                         color: #333333;
                         @include transition(all 0.5s);
-                        font-size: 30px;
+                        font-size: 50px;
                         z-index: 1;
                         opacity: 0;
                         visibility: hidden;
@@ -1064,15 +1058,11 @@
                 &:hover .owl-nav .owl-next {
                     opacity: 1;
                     visibility: visible;
-                    animation-name: fadeInRightBig;
-                    animation-duration: 0.5s;
                     @include transition(all 0.5s ease-out);
                 }
                 &:hover .owl-nav .owl-prev {
                     opacity: 1;
                     visibility: visible;
-                    animation-name: fadeInLeftBig;
-                    animation-duration: 0.5s;
                     @include transition(all 0.5s ease-out);
                 }
                 .item {
@@ -1239,26 +1229,27 @@
                 &:hover .owl-nav .owl-next {
                     opacity: 1;
                     visibility: visible;
-                    animation-name: fadeInRightBig;
-                    animation-duration: 0.5s;
                     @include transition(all 0.5s ease-out);
                 }
                 &:hover .owl-nav .owl-prev {
                     opacity: 1;
                     visibility: visible;
-                    animation-name: fadeInLeftBig;
-                    animation-duration: 0.5s;
                     @include transition(all 0.5s ease-out);
                 }
                 .item {
                     .testimonial {
                         text-align: center;
                         .testimonial-content {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
                             .testimonial-detail {
                                 font-size: 15px;
                                 font-weight: 400;
                                 font-style: normal;
                                 font-family: $main_font_family;
+                                width: 60%;
                                 i {
                                     color: #fff;
                                     margin-right: 0.5em;
@@ -1487,15 +1478,11 @@
         &:hover .owl-nav .owl-next {
             opacity: 1;
             visibility: visible;
-            animation-name: fadeInRightBig;
-            animation-duration: 0.5s;
             @include transition(all 0.5s ease-out);
         }
         &:hover .owl-nav .owl-prev {
             opacity: 1;
             visibility: visible;
-            animation-name: fadeInLeftBig;
-            animation-duration: 0.5s;
             @include transition(all 0.5s ease-out);
         }
         .item {
@@ -1707,16 +1694,12 @@
     &:hover .owl-nav .owl-next {
         opacity: 1;
         visibility: visible;
-        animation-name: fadeInRightBig;
-        animation-duration: 0.5s;
         @include transition(all 0.5s ease-out);
     }
     &:hover .owl-nav .owl-prev {
         opacity: 1;
         visibility: visible;
-        animation-name: fadeInLeftBig;
-        animation-duration: 0.5s;
-        @include transition(all 0.5s ease-out);
+         @include transition(all 0.5s ease-out);
     }
     .item {
         .product-brand {
