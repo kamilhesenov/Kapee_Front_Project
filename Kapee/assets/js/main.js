@@ -249,12 +249,34 @@ $(document).ready(function () {
             $(".header-heart").addClass("d-none");
             $(".logo-mobil").addClass("d-none");
             $(".search").addClass("onscrol");
+            
+            $("#product-info .accordition .card .card-header h5 a").click(function () {
+                    
+                  if($(this).children().hasClass("fa-angle-down")){
+                        $("#product-info .accordition .card .card-header h5 a .fa-angle-up").removeClass("fa-angle-up").addClass("fa-angle-down")
+                        $(this).children().removeClass("fa-angle-down").addClass("fa-angle-up");
+                    }
+                    else{
+                        $(this).children().removeClass("fa-angle-up").addClass("fa-angle-down");
+                    }
+            })
         }
         if(window.innerWidth < 767.98){
             $(".logo-mobil a").addClass("d-none");
             $(".header-account a").addClass("d-none");
             $(".header-heart a").addClass("d-none");
             $(".cart-icon").addClass("d-none");
+
+            $("#product-info .accordition .card .card-header h5 a").click(function () {
+                    
+                if($(this).children().hasClass("fa-angle-down")){
+                      $("#product-info .accordition .card .card-header h5 a .fa-angle-up").removeClass("fa-angle-up").addClass("fa-angle-down")
+                      $(this).children().removeClass("fa-angle-down").addClass("fa-angle-up");
+                  }
+                  else{
+                      $(this).children().removeClass("fa-angle-up").addClass("fa-angle-down");
+                  }
+            })
         }
       }
       else{
@@ -381,7 +403,7 @@ $(document).ready(function () {
     asNavFor: ".product-sync-nav",
  });
  $(".product-sync-nav").slick({
-    dots: false,
+    dots: true,
     arrows: true,
     infinite: false,
     prevArrow: '<button class="next slick-prev"><i class="fas fa-angle-left"></i></button>',
@@ -392,6 +414,17 @@ $(document).ready(function () {
     focusOnSelect: true,
     draggable: false,
   });
+
+  //Product photo zoom   
+  $("#product-single .product-slider .product-sync-init .single-product .product-thumb").zoom();
+  
+
+  //Product small photo active class border   
+  $("#product-single .product-slider .product-sync-nav img").click(function(){
+      console.log($(this));
+      $(".product-thumb .active").removeClass("active");
+      $(this).addClass("active");
+    })
 
   // product color change
   $(".product-color").click(function(){
@@ -414,18 +447,20 @@ $(document).ready(function () {
 })
 
   // Products corusel start
-  if ($("#releted-product").length) {
-    $('#releted-product .owl-carousel').owlCarousel({
-        dots: false,
-        loop: true,
+  if ($("#related-product").length) {
+    $('#related-product .owl-carousel').owlCarousel({
+        dots: true,
+        loop: false,
         nav: true,
         mouseDrag: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
         responsive: {
             0: {
                 items: 2
             },
             600: {
-                items: 2
+                items: 3
             },
             1000: {
                 items: 4
@@ -449,6 +484,22 @@ $(document).ready(function () {
 })
 
 // related product size change
+$(".product-size").click(function(){
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+})
+
+
+// recently view color change
+$(".product-color").click(function(){
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+    console.log($(this).attr("data-id"));
+    $(this).parents(".product-group").find(`.product-img a img[data-id=${$(this).attr("data-id")}]`).removeClass("hide-img");
+    $(this).parents(".product-group").find(`.product-img a img[data-id=${$(this).attr("data-id")}]`).siblings().addClass("hide-img");
+})
+
+// recently view size change
 $(".product-size").click(function(){
     $(this).addClass("active");
     $(this).siblings().removeClass("active");
