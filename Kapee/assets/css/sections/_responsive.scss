@@ -278,28 +278,6 @@
         }
     }
 
-    // recently view start
-    #recently-view {
-        .item {
-            .product-group {
-                .product-item {
-                    padding: 25px !important;
-                    .product-img {
-                        margin-bottom: 8px !important;
-                        .product-button {
-                            top: 0 !important;
-                            right: 90px !important;
-                        }
-                        a {
-                            img {
-                                max-width: 70% !important;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 // Responsive for IPhone
@@ -669,56 +647,59 @@
         }
     }
 
-    // recently view start
-    #recently-view {
-        .item {
-            .product-group {
-                .product-item {
-                    padding: 20px 100px 0px 26px !important;
-                    .product-img {
-                        margin-bottom: 8px !important;
-                        .product-button {
-                            top: 0 !important;
-                            right: 90px !important;
-                        }
-                        a {
-                            img {
-                                max-width: 70% !important;
-                            }
-                        }
-                    }
-                    .product-text {
-                        .product-title {
-                            h3 {
-                                a {
-                                    display: block !important;
-                                    overflow: hidden !important;
-                                    white-space: nowrap !important;
-                                    text-overflow: ellipsis !important;
-                                    padding-right: 10px !important;
-                                    width: 70% !important;
-                                }
-                            }
-                            .product-start {
-                                .rating-wrap {
-                                    padding: 0px 4px !important;
-                                }
-                            }
-                        }
-                        .product-price{
-                            width: 60% !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
     // footer copyright start
     #footer-copyright{
         padding-bottom: 20% !important;
         .copyright-text{
             margin-bottom: 20px !important;
         }
+    }
+
+    #title-page{
+      .entry-header{
+         h1{
+            font-size: 36px !important; 
+         } 
+      }  
+    }
+    // main page start
+    #main-page{
+        .product-categories{
+           .categories-items{
+              .category-item{
+                 a{
+                    i{
+                        right: 10px !important;
+                    } 
+                 } 
+              } 
+           } 
+        }
+      .item{
+        .product-group{
+          .product-item{
+            .product-img{
+              .product-featured{
+                span{
+                    padding: 1px 2px !important;
+                }  
+              }
+              .product-button{
+                right: -7px !important;
+                top: -7px !important;
+              }  
+            }
+            .product-text{
+              .product-price{
+                .price{
+                   span{
+                       font-size: 13px !important;
+                   } 
+                }  
+              }  
+            }  
+          }  
+        }  
+      }  
     }
 }
