@@ -5061,6 +5061,16 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     opacity: 0 !important;
     visibility: hidden !important;
   }
+  #login .title-page {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+  #login .title-page h1 {
+    font-size: 42px !important;
+  }
+  #login .main-content .login-signin .customer-login .login-right form .form-group a {
+    margin-left: 27% !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -5333,6 +5343,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
   #main-page .item .product-group .product-item .product-text .product-price .price span {
     font-size: 13px !important;
+  }
+  #login .main-content .login-signin .customer-login {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+  }
+  #login .main-content .login-signin .customer-login .login-right form .form-group a {
+    margin-left: 8% !important;
   }
 }
 
@@ -12083,5 +12100,251 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   color: #333;
   display: inline-block;
   cursor: pointer;
+}
+
+#main-page .pagination-area {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  width: 100%;
+  display: block;
+}
+
+#main-page .pagination-area ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 0;
+}
+
+#main-page .pagination-area ul li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#main-page .pagination-area ul li a {
+  text-decoration: none;
+  background-color: #f2f2f2;
+  color: #282828;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  height: 40px;
+  width: 44px;
+  margin: 0 3px;
+  display: block;
+  font-size: 20px;
+  line-height: 2;
+  text-align: center;
+  border-radius: 4px;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 0 15px;
+  font-weight: 500;
+}
+
+#main-page .pagination-area ul li a:hover {
+  background-color: #2370F4;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  color: #fff;
+}
+
+#main-page .pagination-area ul .active a {
+  background-color: #2370F4;
+  color: #fff;
+}
+
+#login .title-page {
+  padding: 10px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+#login .title-page h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  color: #333;
+  text-transform: inherit;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#login .main-content {
+  padding-bottom: 38px;
+  padding-top: 38px;
+}
+
+#login .main-content .login-signin {
+  background-color: #fff;
+  max-width: 695px;
+  margin: 0 auto;
+  margin-top: 1em;
+  -webkit-box-shadow: 0 0 1px;
+          box-shadow: 0 0 1px;
+}
+
+#login .main-content .login-signin .customer-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#login .main-content .login-signin .customer-login .login-left {
+  background-color: #2370F4;
+  color: #fff;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+  font-size: 18px;
+  padding: 40px 35px;
+  border: 1px solid #2370F4;
+}
+
+#login .main-content .login-signin .customer-login .login-left h2 {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-transform: inherit;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#login .main-content .login-signin .customer-login .login-left p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+#login .main-content .login-signin .customer-login .login-right {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  padding: 40px 35px;
+}
+
+#login .main-content .login-signin .customer-login .login-right form {
+  text-align: left;
+}
+
+#login .main-content .login-signin .customer-login .login-right form .form-group {
+  display: inherit;
+  padding: 0;
+  margin: 0 0 1em;
+}
+
+#login .main-content .login-signin .customer-login .login-right form .form-group input {
+  line-height: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  border: 1px solid #e9e9e9;
+  color: #777;
+  display: block;
+  padding: 6px 12px;
+  height: 42px;
+  overflow: visible;
+  font-size: 100%;
+}
+
+#login .main-content .login-signin .customer-login .login-right form .form-group label {
+  color: #2370F4;
+  font-weight: 600;
+  line-height: 2;
+  margin: 0;
+}
+
+#login .main-content .login-signin .customer-login .login-right form .form-group input[type="checkbox"] {
+  border: 1px solid #e9e9e9;
+  border-radius: 4px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  outline: 0;
+  clear: none;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  vertical-align: middle;
+  line-height: 0;
+  padding: 0;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#login .main-content .login-signin .customer-login .login-right form .form-group a {
+  text-decoration: none;
+  margin-left: 28%;
+  color: #2370F4;
+  font-weight: 600;
+}
+
+#login .main-content .login-signin .customer-login .login-right form button {
+  background-color: #2370F4;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px 0;
+          box-shadow: 0 1px 2px 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  overflow: visible;
+  outline: none;
+}
+
+#login .main-content .login-signin .customer-login .login-right form .create-account {
+  padding-top: 20px;
+}
+
+#login .main-content .login-signin .customer-login .login-right form .create-account a {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #2370F4;
+  -webkit-box-shadow: 0 0 3px #cccccc;
+          box-shadow: 0 0 3px #cccccc;
+  width: 100%;
+  text-align: center;
+  border: 0;
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+#login .main-content .login-signin .customer-login .login-right form .create-account a:hover {
+  background-color: #2370F4;
+  color: #fff;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
 }
 /*# sourceMappingURL=style.css.map */

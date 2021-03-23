@@ -529,7 +529,8 @@ $(document).ready(function () {
          })
 
         //  category-detail
-        $("#main-page .product-categories .categories-items .category-item a i").click(function(){
+        $("#main-page .product-categories .categories-items .category-item a i").click(function(e){
+            e.preventDefault()
             if($(this).hasClass("fa-angle-down")){
                 $(this).removeClass("fa-angle-down").addClass("fa-angle-up");
                 $(this).parent().next().next().removeClass("d-none");
