@@ -286,20 +286,31 @@
                 font-size: 42px !important;
             }
         }
-        .main-content{
-          .login-signin{
-            .customer-login{
-              .login-right{
-                form{
-                  .form-group{
-                      a{
-                        margin-left: 27% !important;  
-                      }
-                  }  
-                }  
-              }  
-            }  
-          }  
+        .main-content {
+            .login-signin {
+                .customer-login {
+                    .login-right {
+                        form {
+                            .form-group {
+                                a {
+                                    margin-left: 27% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // login start
+    #register {
+        .title-page {
+            padding-top: 35px !important;
+            padding-bottom: 35px !important;
+            h1 {
+                font-size: 42px !important;
+            }
         }
     }
 }
@@ -732,22 +743,33 @@
     }
 
     // login start
-    #login{
-      .main-content{
-        .login-signin{
-          .customer-login{
-            flex-wrap: wrap !important;
-            .login-right{
-                form{
-                  .form-group{
-                      a{
-                        margin-left: 8% !important;  
-                      }
-                  }  
-                }  
-              }
-          }  
-        }  
-      }  
+    #login {
+        .main-content {
+            .login-signin {
+                .customer-login {
+                    flex-wrap: wrap !important;
+                    .login-right {
+                        form {
+                            .form-group {
+                                a {
+                                    margin-left: 8% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // register start
+    #register {
+        .main-content {
+            .register-signup {
+                .customer-register {
+                    flex-wrap: wrap !important;
+                }
+            }
+        }
     }
 }

@@ -390,32 +390,32 @@ $(document).ready(function () {
         })
 
         //  Product Detail start
-       $(".product-sync-init").slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: false,
-            draggable: false,
-            arrows: false,
-            dots: false,
-            fade: true,
-            asNavFor: ".product-sync-nav",
-        });
+    //    $(".product-sync-init").slick({
+    //         slidesToShow: 1,
+    //         slidesToScroll: 1,
+    //         infinite: false,
+    //         draggable: false,
+    //         arrows: false,
+    //         dots: false,
+    //         fade: true,
+    //         asNavFor: ".product-sync-nav",
+    //     });
 
-       $(".product-sync-nav").slick({
-            dots: true,
-            arrows: true,
-            infinite: false,
-            prevArrow: '<button class="next slick-prev"><i class="fas fa-angle-left"></i></button>',
-            nextArrow: '<button class="prev slick-next"><i class="fas fa-angle-right"></i></button>',
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            asNavFor: ".product-sync-init",
-            focusOnSelect: true,
-            draggable: false,
-        });
+    //    $(".product-sync-nav").slick({
+    //         dots: true,
+    //         arrows: true,
+    //         infinite: false,
+    //         prevArrow: '<button class="next slick-prev"><i class="fas fa-angle-left"></i></button>',
+    //         nextArrow: '<button class="prev slick-next"><i class="fas fa-angle-right"></i></button>',
+    //         slidesToShow: 4,
+    //         slidesToScroll: 1,
+    //         asNavFor: ".product-sync-init",
+    //         focusOnSelect: true,
+    //         draggable: false,
+    //     });
 
        //Product photo zoom   
-       $("#product-single .product-slider .product-sync-init .single-product .product-thumb").zoom();
+    //    $("#product-single .product-slider .product-sync-init .single-product .product-thumb").zoom();
   
 
        //Product small photo active class border   
@@ -600,6 +600,16 @@ $(document).ready(function () {
                 $("#main-page .star-filter h2 i").removeClass("fa-angle-down").addClass("fa-angle-up");
                 $(this).next().removeClass("d-none");
             }
+        })
+
+
+        // register customer vender
+        $("#register .main-content .register-right .form-check .vender").click(function(){
+            $("#register .main-content .register-right .vender-form").removeClass("d-none");
+        })
+
+        $("#register .main-content .register-right .form-check .customer").click(function(){
+            $("#register .main-content .register-right .vender-form").addClass("d-none");
         })
  
 })

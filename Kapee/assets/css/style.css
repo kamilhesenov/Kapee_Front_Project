@@ -5071,6 +5071,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #login .main-content .login-signin .customer-login .login-right form .form-group a {
     margin-left: 27% !important;
   }
+  #register .title-page {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+  #register .title-page h1 {
+    font-size: 42px !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -5350,6 +5357,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   }
   #login .main-content .login-signin .customer-login .login-right form .form-group a {
     margin-left: 8% !important;
+  }
+  #register .main-content .register-signup .customer-register {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
   }
 }
 
@@ -12346,5 +12357,164 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
+}
+
+#register .title-page {
+  padding: 10px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+#register .title-page h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  color: #333;
+  text-transform: inherit;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#register .main-content {
+  padding-bottom: 38px;
+  padding-top: 38px;
+}
+
+#register .main-content .register-signup {
+  background-color: #fff;
+  max-width: 695px;
+  margin: 0 auto;
+  margin-top: 1em;
+  -webkit-box-shadow: 0 0 1px;
+          box-shadow: 0 0 1px;
+}
+
+#register .main-content .register-signup .customer-register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#register .main-content .register-signup .customer-register .register-left {
+  background-color: #2370F4;
+  color: #fff;
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
+  font-size: 18px;
+  padding: 40px 35px;
+  border: 1px solid #2370F4;
+}
+
+#register .main-content .register-signup .customer-register .register-left h2 {
+  color: #fff;
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-transform: inherit;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#register .main-content .register-signup .customer-register .register-left p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  margin: 0 0 1.5em;
+  padding: 0;
+}
+
+#register .main-content .register-signup .customer-register .register-right {
+  -webkit-box-flex: 60%;
+      -ms-flex: 60%;
+          flex: 60%;
+  padding: 40px 35px;
+}
+
+#register .main-content .register-signup .customer-register .register-right form {
+  text-align: left;
+}
+
+#register .main-content .register-signup .customer-register .register-right form .form-group {
+  display: inherit;
+  padding: 0;
+  margin: 0 0 1em;
+}
+
+#register .main-content .register-signup .customer-register .register-right form .form-group input {
+  line-height: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  border: 1px solid #e9e9e9;
+  color: #777;
+  display: block;
+  padding: 6px 12px;
+  height: 42px;
+  overflow: visible;
+  font-size: 100%;
+}
+
+#register .main-content .register-signup .customer-register .register-right form .vender-form label {
+  line-height: 2;
+  color: #333333;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+#register .main-content .register-signup .customer-register .register-right form .vender-form label .required {
+  color: red;
+  font-weight: 700;
+  border: 0 !important;
+  text-decoration: none;
+  visibility: visible;
+}
+
+#register .main-content .register-signup .customer-register .register-right form .vender-form input {
+  line-height: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  border: 1px solid #e9e9e9;
+  color: #777;
+  display: block;
+  padding: 6px 12px;
+  height: 42px;
+  overflow: visible;
+  font-size: 100%;
+}
+
+#register .main-content .register-signup .customer-register .register-right form label {
+  color: #333333;
+  display: block;
+  font-weight: 600;
+}
+
+#register .main-content .register-signup .customer-register .register-right form button {
+  background-color: #2370F4;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 1px 2px 0;
+          box-shadow: 0 1px 2px 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  overflow: visible;
+  outline: none;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
