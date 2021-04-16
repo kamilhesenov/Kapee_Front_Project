@@ -5078,6 +5078,12 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #register .title-page h1 {
     font-size: 42px !important;
   }
+  #wihslist .main-content form table tbody tr .product-add-to-cart {
+    text-align: left !important;
+  }
+  #wihslist .main-content form table tbody tr .product-add-to-cart a {
+    width: 142px !important;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -12516,5 +12522,328 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   overflow: visible;
   outline: none;
   margin-top: 20px;
+}
+
+#wihslist .title-page {
+  padding: 10px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+#wihslist .title-page h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  color: #333;
+  text-transform: inherit;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#wihslist .main-content {
+  padding-bottom: 38px;
+  padding-top: 38px;
+}
+
+#wihslist .main-content form table {
+  font-size: 100%;
+  margin: 0 -1px 24px 0;
+  text-align: left;
+  width: 100%;
+  border-collapse: separate;
+}
+
+#wihslist .main-content form table thead tr th {
+  padding: 9px 12px;
+  color: #333;
+  text-align: left;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#wihslist .main-content form table tbody tr .product-remove {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e9e9e9;
+  padding: 8px 12px;
+  vertical-align: middle;
+  text-align: inherit;
+}
+
+#wihslist .main-content form table tbody tr .product-remove a {
+  width: 20px;
+  height: 20px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 1;
+  border-radius: 100%;
+}
+
+#wihslist .main-content form table tbody tr .product-remove a i {
+  color: red;
+}
+
+#wihslist .main-content form table tbody tr .product-thumbnail {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e9e9e9;
+  padding: 8px 12px;
+  vertical-align: middle;
+  text-align: inherit;
+}
+
+#wihslist .main-content form table tbody tr .product-thumbnail a img {
+  max-width: 80px;
+  width: inherit;
+  height: auto;
+  border-style: none;
+  vertical-align: middle;
+}
+
+#wihslist .main-content form table tbody tr .product-name {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e9e9e9;
+  padding: 8px 12px;
+  vertical-align: middle;
+  text-align: inherit;
+  font-weight: 600;
+}
+
+#wihslist .main-content form table tbody tr .product-name a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+#wihslist .main-content form table tbody tr .product-name a:hover {
+  color: #2370F4;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+#wihslist .main-content form table tbody tr .product-price {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e9e9e9;
+  padding: 8px 12px;
+  vertical-align: middle;
+  text-align: inherit;
+}
+
+#wihslist .main-content form table tbody tr .product-price span {
+  color: #2370F4;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#wihslist .main-content form table tbody tr .product-stock-status {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e9e9e9;
+  padding: 8px 12px;
+  vertical-align: middle;
+  text-align: inherit;
+}
+
+#wihslist .main-content form table tbody tr .product-add-to-cart {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e9e9e9;
+  padding: 8px 12px;
+  vertical-align: middle;
+  text-align: right;
+}
+
+#wihslist .main-content form table tbody tr .product-add-to-cart a {
+  background-color: #2370F4;
+  color: #ffff;
+  border-radius: 0;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  margin: 0;
+  padding: 10px 14px;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#wihslist .main-content form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#wihslist .main-content form ul li {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e9e9e9;
+  border: 0;
+  display: block;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-left: 112px;
+  position: relative;
+}
+
+#wihslist .main-content form ul li .item-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#wihslist .main-content form ul li .item-wrapper .product-thumbnail {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  position: absolute;
+  left: 0;
+}
+
+#wihslist .main-content form ul li .item-wrapper .product-thumbnail a {
+  text-decoration: none;
+}
+
+#wihslist .main-content form ul li .item-wrapper .product-thumbnail a img {
+  max-width: 98px;
+  height: auto;
+  border-style: none;
+  vertical-align: middle;
+}
+
+#wihslist .main-content form ul li .item-wrapper .item-details {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+#wihslist .main-content form ul li .item-wrapper .item-details .product-name h3 {
+  font-size: 14px;
+  margin-bottom: 0.7em;
+  margin-right: 2em;
+  text-transform: inherit;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#wihslist .main-content form ul li .item-wrapper .item-details .product-name h3 a {
+  color: #333;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+#wihslist .main-content form ul li .item-wrapper .item-details .product-name h3 a:hover {
+  color: #2370F4;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+#wihslist .main-content form ul li .item-wrapper .item-details .item-details-table {
+  margin-bottom: 0;
+  border-collapse: collapse;
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+#wihslist .main-content form ul li .item-wrapper .item-details .item-details-table tbody tr {
+  border: 0;
+}
+
+#wihslist .main-content form ul li .item-wrapper .item-details .item-details-table tbody tr .label {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 0;
+  border: 0;
+  text-align: inherit;
+}
+
+#wihslist .main-content form ul li .item-wrapper .item-details .item-details-table tbody tr .value {
+  text-align: right;
+  font-weight: 600;
+  padding: 2px 0;
+  border: 0;
+}
+
+#wihslist .main-content form ul li .additional-info-wrapper .additional-info {
+  margin-bottom: 0;
+  border-collapse: collapse;
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+#wihslist .main-content form ul li .additional-info-wrapper .additional-info tbody tr {
+  border: 0;
+}
+
+#wihslist .main-content form ul li .additional-info-wrapper .additional-info tbody tr .label {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 0;
+  border: 0;
+  text-align: inherit;
+}
+
+#wihslist .main-content form ul li .additional-info-wrapper .additional-info tbody tr .value {
+  text-align: right;
+  font-weight: 600;
+  padding: 2px 0;
+  border: 0;
+}
+
+#wihslist .main-content form ul li .additional-info-wrapper .product-add-to-cart {
+  margin-top: .7em;
+}
+
+#wihslist .main-content form ul li .additional-info-wrapper .product-add-to-cart a {
+  background-color: #2370F4;
+  color: #ffff;
+  font-size: 12px;
+  padding: 8px 14px;
+  float: none;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 10px #cccccc;
+          box-shadow: 0 0 10px #cccccc;
+}
+
+#wihslist .main-content form ul li .additional-info-wrapper .product-remove {
+  position: absolute;
+  top: -3px;
+  right: 0;
+}
+
+#wihslist .main-content form ul li .additional-info-wrapper .product-remove a {
+  text-decoration: none;
+  color: #333;
+}
+
+#wihslist .main-content form ul li .additional-info-wrapper .product-remove a i {
+  font-size: 17px;
+  text-align: center;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=style.css.map */

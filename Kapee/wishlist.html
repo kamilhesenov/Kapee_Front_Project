@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Document</title>
     <script src="https://kit.fontawesome.com/1f2890de0d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
@@ -585,15 +585,15 @@
             </div>
         </section>
     </header>
-    
+
     <main>
-        <!-- Login start -->
-        <section id="login">
+        <!-- Wishlist start -->
+        <section id="wihslist">
             <div class="title-page">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h1>My account</h1>
+                            <h1>My Wishlist</h1>
                         </div>
                     </div>
                 </div>
@@ -602,39 +602,107 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="login-signin">
-                                <div class="customer-login">
-                                    <div class="login-left">
-                                        <h2>Login</h2>
-                                        <p>Get access to your Orders, Wishlist and Recommendations.</p>
-                                    </div>
-                                    <div class="login-right">
-                                        <form method="post">
-                                            <div class="form-group">
-                                                <input type="text" placeholder="Enter Username/Email address">
+                            <form>
+                                <table class="d-none">
+                                    <thead>
+                                        <tr>
+                                            <th class="product-remove">
+                                                <span></span>
+                                            </th>
+                                            <th class="product-thumbnail"></th>
+                                            <th>
+                                                <span>Product name</span>
+                                            </th>
+                                            <th>
+                                                <span>Unit price</span>
+                                            </th>
+                                            <th>
+                                                <span>Stock status</span>
+                                            </th>
+                                            <th>
+                                                <span></span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                           <td class="product-remove">
+                                               <a href="#"><i class="fas fa-trash"></i></a>
+                                           </td>
+                                           <td class="product-thumbnail">
+                                               <a href="#">
+                                                   <img src="/Kapee/assets/img/Women-Off-White-Printed-Blouson-Top-300x350.jpg" alt="">
+                                               </a>
+                                           </td>
+                                           <td class="product-name">
+                                               <a href="#">Women Off White Printed Blouson Top</a>
+                                           </td>
+                                           <td class="product-price">
+                                               <span>$47.00</span>
+                                           </td>
+                                           <td class="product-stock-status">
+                                               <span>In Stock</span>
+                                           </td>
+                                           <td class="product-add-to-cart">
+                                               <a href="#">Select options</a>
+                                           </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <ul>
+                                    <li>
+                                        <div class="item-wrapper">
+                                            <div class="product-thumbnail">
+                                                <a href="#">
+                                                    <img src="/Kapee/assets/img/Women-Off-White-Printed-Blouson-Top-300x350.jpg" alt="">
+                                                </a>
                                             </div>
-                                            <div class="form-group">
-                                                <input type="password" placeholder="Enter Password">
+                                            <div class="item-details">
+                                                <div class="product-name">
+                                                    <h3>
+                                                        <a href="#">Women Off White Printed Blouson Top</a>
+                                                    </h3>
+                                                </div>
+                                                <table class="item-details-table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="label">Price:</td>
+                                                            <td class="value">
+                                                                <span>$47.00</span>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                            <div class="form-group">
-                                                <input type="checkbox" class="form-control" id="remember">
-                                                <label for="remember">Remember Me</label>
-                                                <a href="#">Lost your password?</a>
+                                        </div>
+                                        <div class="additional-info-wrapper">
+                                            <table class="additional-info">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="label">Stock:</td>
+                                                        <td class="value">
+                                                            <span>In Stock</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="product-add-to-cart">
+                                                <a href="#">Select options</a>
                                             </div>
-                                            <button type="submit">Log in</button>
-                                            <div class="create-account">
-                                                <a href="#">Register</a>
+                                            <div class="product-remove">
+                                                <a href="#"><i class="fas fa-times"></i></a>
                                             </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <!-- Wishlist end -->
 
     <footer>
         <!-- Footer-main start-->
@@ -826,6 +894,7 @@
     <a href="#" class="back-to-top">
         <i class="fas fa-angle-up"></i>
     </a>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>

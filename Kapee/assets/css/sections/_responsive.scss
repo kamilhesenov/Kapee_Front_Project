@@ -313,6 +313,26 @@
             }
         }
     }
+
+    // wishlist start
+    #wihslist{
+       .main-content{
+           form{
+               table{
+                  tbody{
+                    tr{
+                       .product-add-to-cart{
+                           text-align: left !important;
+                           a{
+                            width: 142px !important;
+                           }
+                       } 
+                    }
+                  } 
+               }
+           }
+       } 
+    }
 }
 
 // Responsive for IPhone
@@ -772,4 +792,5 @@
             }
         }
     }
+
 }
