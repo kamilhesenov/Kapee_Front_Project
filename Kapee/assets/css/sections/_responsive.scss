@@ -316,9 +316,15 @@
 
     // wishlist start
     #wihslist{
+        .title-page{
+            h1{
+                font-size: 42px !important;
+            } 
+         }
        .main-content{
            form{
-               table{
+               .card-table{
+                display: none !important;
                   tbody{
                     tr{
                        .product-add-to-cart{
@@ -329,6 +335,9 @@
                        } 
                     }
                   } 
+               }
+               ul{
+                display: block !important;
                }
            }
        } 
@@ -791,6 +800,25 @@
                 }
             }
         }
+    }
+
+    // wishlist start
+    #wihslist{
+       .title-page{
+          h1{
+            font-size: 36px !important;
+          } 
+       }
+       .main-content{
+          form{
+             .card-table{
+                  display: none !important;
+             }
+             ul{
+                 display: block !important;
+             } 
+          } 
+       } 
     }
 
 }

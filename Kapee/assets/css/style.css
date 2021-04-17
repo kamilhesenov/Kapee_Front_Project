@@ -5078,11 +5078,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #register .title-page h1 {
     font-size: 42px !important;
   }
-  #wihslist .main-content form table tbody tr .product-add-to-cart {
+  #wihslist .title-page h1 {
+    font-size: 42px !important;
+  }
+  #wihslist .main-content form .card-table {
+    display: none !important;
+  }
+  #wihslist .main-content form .card-table tbody tr .product-add-to-cart {
     text-align: left !important;
   }
-  #wihslist .main-content form table tbody tr .product-add-to-cart a {
+  #wihslist .main-content form .card-table tbody tr .product-add-to-cart a {
     width: 142px !important;
+  }
+  #wihslist .main-content form ul {
+    display: block !important;
   }
 }
 
@@ -5367,6 +5376,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #register .main-content .register-signup .customer-register {
     -ms-flex-wrap: wrap !important;
         flex-wrap: wrap !important;
+  }
+  #wihslist .title-page h1 {
+    font-size: 36px !important;
+  }
+  #wihslist .main-content form .card-table {
+    display: none !important;
+  }
+  #wihslist .main-content form ul {
+    display: block !important;
   }
 }
 
@@ -12544,7 +12562,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   padding-top: 38px;
 }
 
-#wihslist .main-content form table {
+#wihslist .main-content form .card-table {
   font-size: 100%;
   margin: 0 -1px 24px 0;
   text-align: left;
@@ -12552,7 +12570,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border-collapse: separate;
 }
 
-#wihslist .main-content form table thead tr th {
+#wihslist .main-content form .card-table thead tr th {
   padding: 9px 12px;
   color: #333;
   text-align: left;
@@ -12560,7 +12578,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-transform: uppercase;
 }
 
-#wihslist .main-content form table tbody tr .product-remove {
+#wihslist .main-content form .card-table tbody tr .product-remove {
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #e9e9e9;
@@ -12569,7 +12587,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-align: inherit;
 }
 
-#wihslist .main-content form table tbody tr .product-remove a {
+#wihslist .main-content form .card-table tbody tr .product-remove a {
   width: 20px;
   height: 20px;
   text-decoration: none;
@@ -12578,11 +12596,11 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border-radius: 100%;
 }
 
-#wihslist .main-content form table tbody tr .product-remove a i {
+#wihslist .main-content form .card-table tbody tr .product-remove a i {
   color: red;
 }
 
-#wihslist .main-content form table tbody tr .product-thumbnail {
+#wihslist .main-content form .card-table tbody tr .product-thumbnail {
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #e9e9e9;
@@ -12591,7 +12609,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-align: inherit;
 }
 
-#wihslist .main-content form table tbody tr .product-thumbnail a img {
+#wihslist .main-content form .card-table tbody tr .product-thumbnail a img {
   max-width: 80px;
   width: inherit;
   height: auto;
@@ -12599,7 +12617,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   vertical-align: middle;
 }
 
-#wihslist .main-content form table tbody tr .product-name {
+#wihslist .main-content form .card-table tbody tr .product-name {
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #e9e9e9;
@@ -12609,7 +12627,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-weight: 600;
 }
 
-#wihslist .main-content form table tbody tr .product-name a {
+#wihslist .main-content form .card-table tbody tr .product-name a {
   color: #333;
   text-decoration: none;
   transition: all 0.5s ease-out;
@@ -12619,7 +12637,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -o-transition: all 0.5s ease-out;
 }
 
-#wihslist .main-content form table tbody tr .product-name a:hover {
+#wihslist .main-content form .card-table tbody tr .product-name a:hover {
   color: #2370F4;
   transition: all 0.5s ease-out;
   -webkit-transition: all 0.5s ease-out;
@@ -12628,7 +12646,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -o-transition: all 0.5s ease-out;
 }
 
-#wihslist .main-content form table tbody tr .product-price {
+#wihslist .main-content form .card-table tbody tr .product-price {
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #e9e9e9;
@@ -12637,22 +12655,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-align: inherit;
 }
 
-#wihslist .main-content form table tbody tr .product-price span {
+#wihslist .main-content form .card-table tbody tr .product-price span {
   color: #2370F4;
   font-weight: 600;
   font-size: 16px;
 }
 
-#wihslist .main-content form table tbody tr .product-stock-status {
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: #e9e9e9;
-  padding: 8px 12px;
-  vertical-align: middle;
-  text-align: inherit;
-}
-
-#wihslist .main-content form table tbody tr .product-add-to-cart {
+#wihslist .main-content form .card-table tbody tr .product-add-to-cart {
   border-top-width: 1px;
   border-top-style: solid;
   border-top-color: #e9e9e9;
@@ -12661,7 +12670,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-align: right;
 }
 
-#wihslist .main-content form table tbody tr .product-add-to-cart a {
+#wihslist .main-content form .card-table tbody tr .product-add-to-cart a {
   background-color: #2370F4;
   color: #ffff;
   border-radius: 0;
@@ -12684,15 +12693,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 #wihslist .main-content form ul li {
+  position: relative;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #e9e9e9;
-  border: 0;
   display: block;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  padding-left: 112px;
-  position: relative;
+  padding-bottom: 40px;
+  padding-left: 120px;
 }
 
 #wihslist .main-content form ul li .item-wrapper {
@@ -12779,33 +12786,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 }
 
 #wihslist .main-content form ul li .item-wrapper .item-details .item-details-table tbody tr .value {
-  text-align: right;
-  font-weight: 600;
-  padding: 2px 0;
-  border: 0;
-}
-
-#wihslist .main-content form ul li .additional-info-wrapper .additional-info {
-  margin-bottom: 0;
-  border-collapse: collapse;
-  margin: 0 0 1.5em;
-  width: 100%;
-}
-
-#wihslist .main-content form ul li .additional-info-wrapper .additional-info tbody tr {
-  border: 0;
-}
-
-#wihslist .main-content form ul li .additional-info-wrapper .additional-info tbody tr .label {
-  text-transform: uppercase;
-  font-size: 11px;
-  font-weight: 600;
-  padding: 2px 0;
-  border: 0;
-  text-align: inherit;
-}
-
-#wihslist .main-content form ul li .additional-info-wrapper .additional-info tbody tr .value {
   text-align: right;
   font-weight: 600;
   padding: 2px 0;

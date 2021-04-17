@@ -277,7 +277,7 @@ $(document).ready(function () {
             $(".header-account a").addClass("d-none");
             $(".header-heart a").addClass("d-none");
             $(".cart-icon").addClass("d-none");
-
+            
             $("#product-info .accordition .card .card-header h5 a").click(function () {
                     
                 if($(this).children().hasClass("fa-angle-down")){
@@ -401,7 +401,8 @@ $(document).ready(function () {
         })
 
         //  Product Detail start
-       $(".product-sync-init").slick({
+      if($(".product-sync-init").length){
+        $(".product-sync-init").slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             infinite: false,
@@ -424,9 +425,12 @@ $(document).ready(function () {
             focusOnSelect: true,
             draggable: false,
         });
+      }
 
        //Product photo zoom   
-       $("#product-single .product-slider .product-sync-init .single-product .product-thumb").zoom();
+       if($("#product-single .product-slider .product-sync-init .single-product .product-thumb").length){
+        $("#product-single .product-slider .product-sync-init .single-product .product-thumb").zoom();
+       }
   
 
        //Product small photo active class border   
