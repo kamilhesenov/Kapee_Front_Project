@@ -338,6 +338,23 @@
         }
         ul {
           display: block !important;
+          li{
+            .additional-info-wrapper{
+              .add-to-cart{
+                top: 100px !important;
+                right: 2px !important;
+              }
+            }
+            .item-details-table{
+              tbody{
+                tr{
+                   .value{
+                     padding: 10px 0 !important;
+                   }
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -362,6 +379,34 @@
             float: left !important;
             width: 300px !important;
         } 
+      }
+    }
+  }
+
+  // checkout start
+  #checkout{
+    .title-page{
+      h1{
+        font-size: 42px !important;
+        padding-top: 20px !important;
+        padding-bottom: 10px !important;
+      }
+    }
+    .main-content{
+      form{
+        .customer-details{
+          .billing-fields{
+            .form-group{
+              width: 43% !important;
+            }
+            .address{
+              width: 52% !important;
+            }
+            .email{
+              width: 52% !important;
+            }
+          }
+        }
       }
     }
   }
@@ -839,6 +884,14 @@
         }
         ul {
           display: block !important;
+          li{
+            .additional-info-wrapper{
+              .add-to-cart{
+                top: 113px !important;
+                right: 2px !important;
+              }
+            }
+          }
         }
       }
     }
@@ -875,6 +928,43 @@
             float: left !important;
             width: 300px !important;
         } 
+      }
+    }
+  }
+
+  // checkout start
+  #checkout{
+    .title-page{
+      h1{
+        font-size: 36px !important;
+      }
+    }
+    .main-content{
+      form{
+        .customer-details{
+          margin-left: 0 !important;
+         margin-right: 0 !important;
+          .billing-fields{
+            .form-group{
+              display: inherit !important;
+              flex-wrap: nowrap !important;
+              width: 95% !important;
+              float: none !important;
+            }
+            .address{
+              padding-left: 0 !important;
+            }
+            .email{
+              padding-left: 0 !important;
+            }
+          }
+        }
+      }
+      .order-fields{
+        margin-top: 20px !important;
+        h3{
+          margin-bottom: 40px !important;
+        }
       }
     }
   }

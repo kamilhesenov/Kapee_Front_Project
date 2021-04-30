@@ -5093,6 +5093,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #wihslist .main-content form ul {
     display: block !important;
   }
+  #wihslist .main-content form ul li .additional-info-wrapper .add-to-cart {
+    top: 100px !important;
+    right: 2px !important;
+  }
+  #wihslist .main-content form ul li .item-details-table tbody tr .value {
+    padding: 10px 0 !important;
+  }
   #cartlist .title-page h1 {
     font-size: 42px !important;
   }
@@ -5105,6 +5112,20 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #cartlist .main-content .cart-collaterals .cart-totals {
     float: left !important;
     width: 300px !important;
+  }
+  #checkout .title-page h1 {
+    font-size: 42px !important;
+    padding-top: 20px !important;
+    padding-bottom: 10px !important;
+  }
+  #checkout .main-content form .customer-details .billing-fields .form-group {
+    width: 43% !important;
+  }
+  #checkout .main-content form .customer-details .billing-fields .address {
+    width: 52% !important;
+  }
+  #checkout .main-content form .customer-details .billing-fields .email {
+    width: 52% !important;
   }
 }
 
@@ -5399,6 +5420,10 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #wihslist .main-content form ul {
     display: block !important;
   }
+  #wihslist .main-content form ul li .additional-info-wrapper .add-to-cart {
+    top: 113px !important;
+    right: 2px !important;
+  }
   #cartlist .title-page h1 {
     font-size: 36px !important;
   }
@@ -5421,6 +5446,32 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   #cartlist .main-content .cart-collaterals .cart-totals {
     float: left !important;
     width: 300px !important;
+  }
+  #checkout .title-page h1 {
+    font-size: 36px !important;
+  }
+  #checkout .main-content form .customer-details {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  #checkout .main-content form .customer-details .billing-fields .form-group {
+    display: inherit !important;
+    -ms-flex-wrap: nowrap !important;
+        flex-wrap: nowrap !important;
+    width: 95% !important;
+    float: none !important;
+  }
+  #checkout .main-content form .customer-details .billing-fields .address {
+    padding-left: 0 !important;
+  }
+  #checkout .main-content form .customer-details .billing-fields .email {
+    padding-left: 0 !important;
+  }
+  #checkout .main-content .order-fields {
+    margin-top: 20px !important;
+  }
+  #checkout .main-content .order-fields h3 {
+    margin-bottom: 40px !important;
   }
 }
 
@@ -12697,6 +12748,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   font-size: 16px;
 }
 
+#wihslist .main-content form .wishlist-table tbody tr .add-to-cart {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e9e9e9;
+  padding: 8px 12px;
+  vertical-align: middle;
+  text-align: right;
+}
+
+#wihslist .main-content form .wishlist-table tbody tr .add-to-cart a {
+  text-decoration: none;
+  color: #2370F4;
+  font-size: 25px;
+}
+
 #wihslist .main-content form .wishlist-table tbody tr .product-add-to-cart {
   border-top-width: 1px;
   border-top-style: solid;
@@ -12844,6 +12910,17 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   text-decoration: none;
   -webkit-box-shadow: 0 0 10px #cccccc;
           box-shadow: 0 0 10px #cccccc;
+}
+
+#wihslist .main-content form ul li .additional-info-wrapper .add-to-cart {
+  position: absolute;
+  top: 60px;
+  right: 0;
+}
+
+#wihslist .main-content form ul li .additional-info-wrapper .add-to-cart a {
+  text-decoration: none;
+  color: #333;
 }
 
 #wihslist .main-content form ul li .additional-info-wrapper .product-remove {
@@ -13009,6 +13086,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 #cartlist .main-content .cartlist-table tbody tr .basket-quantity span {
   color: #333;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#cartlist .main-content .cartlist-table tbody tr .subtotal {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #e9e9e9;
+  padding: 8px 12px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#cartlist .main-content .cartlist-table tbody tr .subtotal span {
+  color: #2370F4;
   font-weight: 600;
   font-size: 16px;
 }
@@ -13191,6 +13283,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   border: 0;
 }
 
+#cartlist .main-content ul li .item-wrapper .item-details .item-details-table tbody tr .label-subtotal {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 0;
+  border: 0;
+  text-align: inherit;
+}
+
+#cartlist .main-content ul li .item-wrapper .item-details .item-details-table tbody tr .value-subtotal {
+  text-align: center;
+  font-weight: 600;
+  padding: 2px 0;
+  border: 0;
+}
+
 #cartlist .main-content ul li .additional-info-wrapper .product-remove {
   position: absolute;
   top: -3px;
@@ -13311,5 +13419,232 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
+}
+
+#checkout .title-page {
+  padding: 10px 0;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+#checkout .title-page h1 {
+  font-size: 60px;
+  line-height: 1.2;
+  color: #333;
+  text-transform: inherit;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#checkout .main-content {
+  padding-bottom: 38px;
+  padding-top: 38px;
+}
+
+#checkout .main-content form .customer-details {
+  margin-left: -15px;
+  margin-right: -15px;
+  border: #e1e8ed 1px solid;
+  border-radius: 4px;
+  background-color: white;
+}
+
+#checkout .main-content form .customer-details .billing-fields {
+  padding-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+#checkout .main-content form .customer-details .billing-fields h3 {
+  position: relative;
+  text-transform: inherit;
+  font-weight: 700;
+  font-style: normal;
+  color: #333333;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+#checkout .main-content form .customer-details .billing-fields h3::after {
+  content: "";
+  position: absolute;
+  background-color: #2370F4;
+  height: 3px;
+  width: 50px;
+  bottom: -10px;
+  left: 2px;
+}
+
+#checkout .main-content form .customer-details .billing-fields .billing-fields-form {
+  margin-top: 50px;
+}
+
+#checkout .main-content form .customer-details .billing-fields .billing-fields-form .address {
+  padding-left: 20px;
+}
+
+#checkout .main-content form .customer-details .billing-fields .billing-fields-form .email {
+  padding-left: 20px;
+}
+
+#checkout .main-content form .customer-details .billing-fields .billing-fields-form .form-group {
+  display: inline-block;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 1em;
+  width: 49%;
+}
+
+#checkout .main-content form .customer-details .billing-fields .billing-fields-form .form-group label {
+  line-height: 2;
+  color: #333;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+#checkout .main-content form .customer-details .billing-fields .billing-fields-form .form-group label .required {
+  color: red;
+  font-weight: 700;
+  border: 0 !important;
+  text-decoration: none;
+  visibility: visible;
+}
+
+#checkout .main-content form .customer-details .billing-fields .billing-fields-form .form-group input {
+  line-height: 2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  outline: 0;
+  border: 1px solid #e9e9e9;
+  color: #777;
+  display: block;
+  padding: 6px 12px;
+  height: 42px;
+  overflow: visible;
+  font-size: 100%;
+}
+
+#checkout .main-content form .customer-details .billing-fields .billing-fields-form button {
+  background-color: #2370F4;
+  margin: 15px 0;
+  padding: 8px 50px;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+#checkout .main-content form .customer-details .billing-fields .billing-fields-form button:hover {
+  background-color: #111;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}
+
+#checkout .main-content .order-fields {
+  border: #e1e8ed 1px solid;
+  border-radius: 4px;
+  background-color: white;
+  padding-top: 20px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+#checkout .main-content .order-fields h3 {
+  position: relative;
+  text-transform: inherit;
+  font-weight: 700;
+  font-style: normal;
+  color: #333333;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+#checkout .main-content .order-fields h3::after {
+  content: "";
+  position: absolute;
+  background-color: #2370F4;
+  height: 3px;
+  width: 50px;
+  bottom: -10px;
+  left: 5px;
+}
+
+#checkout .main-content .order-fields table {
+  margin: 0 -1px 24px 0;
+  text-align: left;
+  width: 100%;
+  border-collapse: separate;
+}
+
+#checkout .main-content .order-fields table thead tr {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-style: solid;
+  border-color: #e9e9e9;
+}
+
+#checkout .main-content .order-fields table thead tr th {
+  padding: 9px 12px;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+#checkout .main-content .order-fields table tbody tr .product-name {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  padding: 8px 12px;
+  vertical-align: middle;
+}
+
+#checkout .main-content .order-fields table tbody tr .product-total {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 8px 12px;
+  vertical-align: middle;
+}
+
+#checkout .main-content .order-fields table tbody tr .product-total span {
+  color: #2370F4;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+#checkout .main-content .order-fields table tfoot tr th {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  padding: 20px 12px 0 12px;
+  text-align: left;
+  font-size: 20px;
+}
+
+#checkout .main-content .order-fields table tfoot tr .total {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  padding: 20px 12px 0 12px;
+  vertical-align: middle;
+}
+
+#checkout .main-content .order-fields table tfoot tr .total span {
+  color: #2370F4;
+  font-weight: 600;
+  font-size: 16px;
 }
 /*# sourceMappingURL=style.css.map */
