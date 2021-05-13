@@ -410,6 +410,34 @@
       }
     }
   }
+
+  // contact start
+  #contact{
+    .title-page{
+      h1{
+        font-size: 42px !important;
+        padding-top: 20px !important;
+        padding-bottom: 10px !important;
+      }
+    }
+    .main-content{
+      .leave-message{
+        .heading{
+          margin-left: 0 !important;
+        }
+        .contact-social{
+          padding: 60px 0 0 0 !important;
+          ul{
+            li{
+              i{
+                padding-left: 8px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 // Responsive for IPhone
@@ -964,6 +992,23 @@
         margin-top: 20px !important;
         h3{
           margin-bottom: 40px !important;
+        }
+      }
+    }
+  }
+
+  // contact start
+  #contact{
+    .title-page{
+      h1{
+        font-size: 36px !important;
+      }
+    }
+    .main-content{
+      .leave-message{
+        margin-top: 20px !important;
+        .contact-social{
+          padding: 10px 0 0 0 !important;
         }
       }
     }
